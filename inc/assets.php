@@ -1,4 +1,3 @@
-// Código Nuevo para zocobaco/wolmart-child/wolmart-child-7be202306e65b21a8edac6c17373832f258f9138/inc/assets.php
 <?php
 defined('ABSPATH') || exit;
 
