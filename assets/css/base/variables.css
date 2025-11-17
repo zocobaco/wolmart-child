@@ -1,107 +1,112 @@
+/* ARCHIVO: zocobaco/wolmart-child/assets/css/base/variables.css (Optimizado)
+*/
 :root {
-/* Brand colors */
-    --brand-primary: var(--night-80);
-    --brand-secondary: var(--aero-100);
 
+/* ===================================================================
+   1. TOKENS DE DISEÑO PERSONALIZADOS (TU SISTEMA)
+   =================================================================== */
+/* Tus colores de marca (los que ya tenías) */
+  --brand-primary: var(--night-80);
+  --brand-secondary: var(--aero-100);
 
-/* Base colors */
+/* Tus colores base (los que ya tenías) */
   --wash: #fbfbfd;
   --white: #fff;
-  --gray-wash: #fbfbfd;    /* Blanco principal, para fondos de páginas */
-  --gray-20: #f5f5f7;      /* Fondos de secciones */
-  --gray-40: #eaeaeb;      /* Bordes de líneas y divisores */
-  --gray-60: #d5d5d7;      /* Bordes de recuadros de texto */
-  --gray-80: #97979b;      /* Texto secundario de pie de página */
-  --gray-100: #6e6e73;     /* Títulos de sección en fondos claros */
+  --gray-wash: #fbfbfd;
+  --gray-20: #f5f5f7;
+  --gray-40: #eaeaeb;
+  --gray-60: #d5d5d7;
+  --gray-80: #97979b;
+  --gray-100: #6e6e73;
   
-  /* Familia de Negros (Night) */
-  --night-40: #56565a;     /* Títulos de menor tamaño */
-  --night-60: #373739;     /* Títulos principales grandes */
-  --night-80: #1f1f21;     /* Color principal de texto y botones */
-  --night-100: #000;       /* Color del logo y elementos de alto contraste */
+/* Tu familia de Negros (Night) */
+  --night-40: #56565a;
+  --night-60: #373739;
+  --night-80: #1f1f21;
+  --night-100: #000;
   
-  /* Familia de Naranjas (Aero) - Tonos ajustados */
-  --aero-wash: #fff3ed;     /* Fondos de banners y secciones */
-  --aero-50: #ffc1a4;      /* Naranja brillante suave para enlaces */
-  --aero-100: #ff661a;     /* Color para botones de conversión (el que me indicó) */
-  --aero-120: #a43400;     /* Tono oscuro para elementos de contraste */
-  --aero-140: #491700;     /* Tono muy oscuro para sombras y detalles */
+/* Tu familia de Naranjas (Aero) */
+  --aero-wash: #fff3ed;
+  --aero-50: #ffc1a4;
+  --aero-100: #ff661a;
+  --aero-120: #a43400;
+  --aero-140: #491700;
   
-  /* Familia de Verdes (Green) - Tonos ajustados */
-  --green-wash: #ecfee9;       /* Fondo de secciones sobre ingredientes */
-  --green-50: #9ad191;        /* Un verde suave para iconos de interacción */
-  --green-100: #5cb85c;       /* El verde principal para el sello de Verificación */
-  --green-120: #28a745;       /* Tono de contraste para títulos o elementos importantes */
-  --green-140: #127804;       /* Tono muy oscuro de verde */
+/* Tu familia de Verdes (Green) */
+  --green-wash: #ecfee9;
+  --green-50: #9ad191;
+  --green-100: #5cb85c;
+  --green-120: #28a745;
+  --green-140: #127804;
 
-    /* Typography colors */
---text-primary: var(--night-80);
---text-secondary: var(--night-40);
---text-title: var(--night-60);
---text-subtitle: var(--gray-100);
---text-body: var(--night-80);
---text-link: var(--aero-principal);
---text-link-hover: var(--aero-action);
---text-link-visited: var(--aero-principal); /* Recomendado usar el mismo color para no confundir al usuario */
---text-disabled: var(--gray-60);
---text-highlight: var(--green-100);
---text-error: var(--aero-action);
---text-warning: var(--aero-principal);
---text-success: var(--green-principal);
---text-placeholder: var(--gray-80);
+/* Tu Tipografía (la que ya tenías) */
+  --font-size-xs: 1rem;
+  --font-size-sm: 1.2rem;
+  --font-size-md: 1.4rem;
+  --font-size-lg: 1.6rem;
+  --font-size-xl: 1.8rem;
+  --font-size-xxl: 2rem;
+  --font-family-body: 'Be Vietnam Pro', sans-serif;
+  --font-family-icon: 'Font Awesome 6 Pro';
+  --line-height-sm: 1.2;
+  --line-height-md: 1.4;
+  --line-height-lg: 1.6;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 
-    /* Typography */
-    --font-size-xs: 1rem;
-    --font-size-sm: 1.2rem;
-    --font-size-md: 1.4rem;
-    --font-size-lg: 1.6rem;
-    --font-size-xl: 1.8rem;
-    --font-size-xxl: 2rem;
-    --font-family-body: 'Be Vietnam Pro', sans-serif;
-    --font-family-icon: 'Font Awesome 6 Pro';
-    --line-height-sm: 1.2;
-    --line-height-md: 1.4;
-    --line-height-lg: 1.6;
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-bold: 700;
+/* Tus Radius y Spacing (los que ya tenías) */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-circle: 50%;
+  --z-base: 5px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+/* Tus Sombras (Shadows) */
+  --shadow-xs: 0 1px 2px 0 rgba(0,0,0,.08);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
 
-    /* Radius */
-    --radius-xs: 4px;
-    --radius-sm: 8px;
-    --radius-md: 12px;
-    --radius-lg: 16px;
-    --radius-xl: 24px;
-    --radius-2xl: 40px;
-    --radius-3xl: 64px;
-    --radius-circle: 50%;
+/* ===================================================================
+   2. MAPEO DE VARIABLES A WOLMART (SECCIÓN NUEVA OPTIMIZADA)
+   =================================================================== */
+/* Con esto, le decimos al tema PADRE que use TUS variables. */
 
-    /* Spacing */
-    --z-base: 5px;
-    --spacing-xs: 4px;
-    --spacing-sm: 8px;
-    --spacing-md: 16px;
-    --spacing-lg: 24px;
-    --spacing-xl: 32px;
-    --spacing-2xl: 40px;
-    --spacing-3xl: 64px;
+  /* Colores */
+  --wolmart-primary-color: var(--brand-secondary); /* Usa tu Naranja como primario */
+  --wolmart-secondary-color: var(--brand-primary); /* Usa tu Negro como secundario */
+  --wolmart-alert-color: var(--aero-120);
+  --wolmart-success-color: var(--green-120);
+  --wolmart-dark-color: var(--night-80);
+  --wolmart-light-color: var(--gray-20);
+  --wolmart-grey-color: var(--gray-80);
+  --wolmart-body-color: var(--night-80); /* Color del texto principal */
+  --wolmart-heading-color: var(--night-60); /* Color de títulos */
+  --wolmart-border-color: var(--gray-40); /* Color de bordes */
 
-    /* Shadow */
-    --shadow-xs: 0 1px 2px 0 rgba(0,0,0,.08);
-    --shadow-sm: 0 1px 2px 0 rgba(0,0,0,.05);
-    --shadow-md: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
+  /* Tipografía */
+  --wolmart-font-family: var(--font-family-body);
+  --wolmart-font-size: var(--font-size-md); /* 1.4rem como base */
+  --wolmart-font-size-xs: var(--font-size-xs);
+  --wolmart-font-size-sm: var(--font-size-sm);
+  --wolmart-font-size-md: var(--font-size-md);
+  --wolmart-font-size-lg: var(--font-size-lg);
+  --wolmart-font-weight-light: 300;
+  --wolmart-font-weight-normal: var(--font-weight-regular);
+  --wolmart-font-weight-semibold: 600;
+  --wolmart-font-weight-bold: var(--font-weight-bold);
+  --wolmart-line-height-body: var(--line-height-lg);
 
-    /* Containers */
-    --container-xs: 420px;
-    --container-sm: 840px;
-    --container-md: 1040px;
-    --container-lg: 1400px;
-    --container-fluid: 1840px;
+  /* Layout y Bordes */
+  --wolmart-border-radius: var(--radius-sm); /* Tu radio de 8px */
+  --wolmart-border-radius-sm: var(--radius-xs);
+  --wolmart-border-radius-lg: var(--radius-md);
+  --wolmart-container-width: 1290px;
+  --wolmart-grid-space: 20px;
 }
-
-
-
-
-
