@@ -1,15 +1,35 @@
-/* ARCHIVO: zocobaco/wolmart-child/assets/css/base/variables.css (Optimizado)
+/*
+ * ARCHIVO: zocobaco/wolmart-child/assets/css/base/variables.css
+ * (Versión optimizada y con nueva paleta de color)
 */
 :root {
 
 /* ===================================================================
    1. TOKENS DE DISEÑO PERSONALIZADOS (TU SISTEMA)
    =================================================================== */
-/* Tus colores de marca (los que ya tenías) */
-  --brand-primary: var(--night-80);
-  --brand-secondary: var(--aero-100);
+  
+  /* Colores de Marca (¡NUEVA PALETA!) */
+  --brand-primary: #1f1f21;     /* Negro Principal (Títulos, Textos) */
+  --brand-secondary: #E8772E;  /* Naranja Terracota (Botones, Precios) */
+  --brand-accent: #38A169;      /* Verde Sostenible (Sello ODS, Éxito) */
 
-/* Tus colores base (los que ya tenías) */
+  /* Paleta de Negros (Night) */
+  --night-40: #56565a;
+  --night-60: #373739;
+  --night-80: #1f1f21;
+  --night-100: #000;
+  
+  /* Paleta de Naranjas (Aero) - Corregida */
+  --aero-wash: #fff3ed;
+  --aero-100: #E8772E; /* ¡Nuevo valor! */
+  --aero-120: #dd6b20; /* Tono más oscuro del nuevo naranja */
+  
+  /* Paleta de Verdes (Green) */
+  --green-wash: #f0fff4;
+  --green-100: #38A169; /* ¡Nuevo valor! */
+  --green-120: #2f855a; /* Tono más oscuro del nuevo verde */
+  
+  /* Paleta de Grises */
   --wash: #fbfbfd;
   --white: #fff;
   --gray-wash: #fbfbfd;
@@ -18,95 +38,50 @@
   --gray-60: #d5d5d7;
   --gray-80: #97979b;
   --gray-100: #6e6e73;
-  
-/* Tu familia de Negros (Night) */
-  --night-40: #56565a;
-  --night-60: #373739;
-  --night-80: #1f1f21;
-  --night-100: #000;
-  
-/* Tu familia de Naranjas (Aero) */
-  --aero-wash: #fff3ed;
-  --aero-50: #ffc1a4;
-  --aero-100: #ff661a;
-  --aero-120: #a43400;
-  --aero-140: #491700;
-  
-/* Tu familia de Verdes (Green) */
-  --green-wash: #ecfee9;
-  --green-50: #9ad191;
-  --green-100: #5cb85c;
-  --green-120: #28a745;
-  --green-140: #127804;
 
-/* Tu Tipografía (la que ya tenías) */
-  --font-size-xs: 1rem;
-  --font-size-sm: 1.2rem;
-  --font-size-md: 1.4rem;
-  --font-size-lg: 1.6rem;
-  --font-size-xl: 1.8rem;
-  --font-size-xxl: 2rem;
+  /* Tipografía (Tus fuentes) */
   --font-family-body: 'Be Vietnam Pro', sans-serif;
-  --font-family-icon: 'Font Awesome 6 Pro';
-  --line-height-sm: 1.2;
-  --line-height-md: 1.4;
-  --line-height-lg: 1.6;
+  --font-family-heading: 'Baloo 2', 'Be Vietnam Pro', sans-serif; /* Usamos Baloo para títulos */
+  --font-size-md: 1.4rem;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
-/* Tus Radius y Spacing (los que ya tenías) */
-  --radius-xs: 4px;
+  /* Radius (Tus radios) */
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
-  --radius-xl: 24px;
   --radius-circle: 50%;
-  --z-base: 5px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 32px;
-  
-/* Tus Sombras (Shadows) */
-  --shadow-xs: 0 1px 2px 0 rgba(0,0,0,.08);
-  --shadow-md: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
 
 /* ===================================================================
-   2. MAPEO DE VARIABLES A WOLMART (SECCIÓN NUEVA OPTIMIZADA)
+   2. MAPEO DE VARIABLES A WOLMART (Optimiz
    =================================================================== */
-/* Con esto, le decimos al tema PADRE que use TUS variables. */
+/*
+ * Aquí le decimos al tema PADRE que use TUS valores.
+ * Esto es "aprovechar el tema" y "no repetir".
+*/
 
   /* Colores */
-  --wolmart-primary-color: var(--brand-secondary); /* Usa tu Naranja como primario */
-  --wolmart-secondary-color: var(--brand-primary); /* Usa tu Negro como secundario */
-  --wolmart-alert-color: var(--aero-120);
-  --wolmart-success-color: var(--green-120);
-  --wolmart-dark-color: var(--night-80);
-  --wolmart-light-color: var(--gray-20);
-  --wolmart-grey-color: var(--gray-80);
-  --wolmart-body-color: var(--night-80); /* Color del texto principal */
-  --wolmart-heading-color: var(--night-60); /* Color de títulos */
-  --wolmart-border-color: var(--gray-40); /* Color de bordes */
+  --wolmart-primary-color: var(--brand-primary);      /* Mapea a tu Negro */
+  --wolmart-secondary-color: var(--brand-secondary);  /* Mapea a tu Naranja */
+  --wolmart-primary-color-hover: #303033;
+  --wolmart-secondary-color-hover: var(--aero-120); /* Naranja más oscuro */
+
+  /* Colores de Texto y Fondo */
+  --wolmart-site-bg-color: var(--white);
+  --wolmart-page-wrapper-bg-color: var(--white);
+  --wolmart-body-color: var(--night-40);      /* #56565a */
+  --wolmart-heading-color: var(--night-60);   /* #373739 */
+  --wolmart-dark-color: var(--night-60);
+  --wolmart-light-color: var(--gray-40);      /* #eaeaeb */
 
   /* Tipografía */
   --wolmart-font-family: var(--font-family-body);
-  --wolmart-font-size: var(--font-size-md); /* 1.4rem como base */
-  --wolmart-font-size-xs: var(--font-size-xs);
-  --wolmart-font-size-sm: var(--font-size-sm);
-  --wolmart-font-size-md: var(--font-size-md);
-  --wolmart-font-size-lg: var(--font-size-lg);
-  --wolmart-font-weight-light: 300;
-  --wolmart-font-weight-normal: var(--font-weight-regular);
-  --wolmart-font-weight-semibold: 600;
-  --wolmart-font-weight-bold: var(--font-weight-bold);
-  --wolmart-line-height-body: var(--line-height-lg);
-
-  /* Layout y Bordes */
-  --wolmart-border-radius: var(--radius-sm); /* Tu radio de 8px */
-  --wolmart-border-radius-sm: var(--radius-xs);
-  --wolmart-border-radius-lg: var(--radius-md);
-  --wolmart-container-width: 1290px;
-  --wolmart-grid-space: 20px;
+  --wolmart-heading-font-family: var(--font-family-heading);
+  --wolmart-body-font-weight: var(--font-weight-medium);
+  --wolmart-body-font-size: var(--font-size-md);
+  
+  /* Layout */
+  --wolmart-container-width: 1160px;
+  --wolmart-border-radius: var(--radius-sm); /* Mapea a tu radio de 8px */
 }
