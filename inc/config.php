@@ -6,12 +6,6 @@ define('ZCB_URI', get_theme_file_uri());
 define('ZCB_PATH', get_theme_file_path());
 define('ZCB_ASSETS_URI', ZCB_URI . '/assets');
 define('ZCB_CSS_URI', ZCB_ASSETS_URI . '/css');
-define('WCFM_PATH', ZCB_PATH . '/wcfm');
-define('WCFM_CSS_URI', WCFM_PATH . '/css');
-
-if (file_exists(WCFM_PATH . '/core-wcfm.php')) {
-    include_once WCFM_PATH . '/core-wcfm.php';
-}
 
 // === GZIP ===
 add_action('init', function () {
