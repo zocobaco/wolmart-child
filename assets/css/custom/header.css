@@ -14,7 +14,7 @@ header .wishlist i {
 .account a,
 .cart-dropdown .cart-toggle {
     height: 36px;
-    border: 1px solid var(--wolmart-border-color); /* MEJORA: Usa la variable de borde del padre */
+    border: 1px solid var(--wolmart-light-color); /* MEJORA: Usa la variable de borde del padre */
     padding: 0 8px;
     justify-content: center;
     border-radius: var(--radius-sm); /* MEJORA: Usa tu token de radio */
