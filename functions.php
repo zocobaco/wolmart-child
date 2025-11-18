@@ -2,24 +2,16 @@
 /**
  * Theme Functions
  * @package ZOCOBA WordPress Framework
- * @author ZOCOBA
- * @link https://zocoba.io
- * @license GPL-2.0+
- * @version 2.0
- * Updated filenames for better clarity.
- * Removed redundant comments.
- * Added error logging for missing files.
- * Updated file paths to use get_theme_file_path().
- * @modified 2024-06
+ * @since 1.0
  */
-// Direct load is not allowed
 defined('ABSPATH') || exit;
 
-// Cargar archivos separados.
+// Cargar archivos separados con nombres semánticos
 $includes = [
-    'inc/config.php',     // Configuración base (antes zcb_core.php)
-    'inc/assets.php',     // Carga de assets (antes zcb_assets.php)
-    'inc/dokan_hooks.php', // (Sin cambios)
+    'inc/config.php',             // Configuración base y constantes (antes zcb_core.php)
+    'inc/assets.php',             // Manejador de carga de CSS/JS (antes zcb_assets.php)
+    'inc/woo-hooks.php',  // ¡NUEVO! Personalizaciones de Hooks
+    // 'inc/dokan_hooks.php',     // (Si tienes este archivo, puedes mover su contenido a woocommerce-hooks.php y borrarlo)
 ];
 
 foreach ($includes as $file) {
