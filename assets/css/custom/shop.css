@@ -516,7 +516,6 @@ p.price del {
 /*====== Product Media Gallery ======*/
 .pg-vertical .product-single-carousel-wrap {
     max-width: calc(100% - 60px);
-    max-height: 550px;
     border: 1px solid var(--wolmart-border-color);
 }
 .pg-vertical .product-thumbs-wrap {
