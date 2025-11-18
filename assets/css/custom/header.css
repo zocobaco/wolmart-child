@@ -1,113 +1,49 @@
-/* Header Customizations - Optimizado */
-header .account i,
-header .cart-toggle i,
-header .compare-open i,
-header .contact i,
-header .wishlist i {
-    font-size: 1.6rem;
-    margin-bottom: 0 !important;
-    font-weight: 500;
+/* ====================
+   1. HEADER
+======================= */
+header .account i,header .cart-toggle i,header .compare-open i,header .contact i,header .wishlist i{
+    font-size:1.6rem;
+    margin-bottom:0!important;
+    font-weight:500;
 }
-
-/* Mejora: Usar variables semánticas para borde y radio */
-.aws-container .aws-search-form,
-.account a,
-.cart-dropdown .cart-toggle {
+.aws-container .aws-search-form ,.account a,.cart-dropdown .cart-toggle {
     height: 36px;
-    border: 1px solid var(--wolmart-light-color); /* MEJORA: Usa la variable de borde del padre */
+    border: 1px solid;
+    border-color: var(--gray-60);
     padding: 0 8px;
     justify-content: center;
-    border-radius: var(--radius-sm); /* MEJORA: Usa tu token de radio */
+    border-radius: 8px;
 }
+/*Search Adv. Woo*/
 
-.z-box .menu-item a,
-.z-box .cat-type-simple {
-    display: inline-flex !important;
-    align-items: center;
-    width: 100%;
-    border-radius: var(--radius-sm); /* MEJORA: Usa tu token de radio */
-    padding: 4px !important;
-    margin-bottom: .15rem !important;
-    height: 35px !important;
-}
 
-/* Mejora: Hover más sutil */
-.z-box .cat-type-simple:hover,
-.z-box .menu-item a:hover {
-    background-color: var(--gray-20); /* MEJORA: Un gris más claro para el hover */
-}
-
-.z-box .account-avatar {
-    width: 40px;
-    height: 40px;
-}
-.z-box .logout span {
-    font-size: 16px;
-    letter-spacing: -0.035em;
-    font-weight: 800;
-}
-
-/* Icons/Figures within Z-Box */
-.z-box figure,
-.z-box i {
-    width: 28px;
-    height: 28px;
-    padding: 0;
-    margin-right: 7px !important;
-}
-
-/* Category Content within Z-Box */
-.z-box .category-wrap {
-    margin-bottom: 0;
-}
-.z-box .category-content {
-    padding: 0;
-    display: block;
-    width: 100%;
-    text-align: left;
-}
-.z-box .woocommerce-loop-category__title {
-    margin-bottom: 0;
-    font-weight: 400;
-    text-transform: math-auto;
-}
-.z-box .woocommerce-loop-category__title a {
-    display: block;
-    width: 100%;
-}
-.z-box .category-content mark {
-    display: none;
-}
-
-/* Search Adv. Woo */
 .aws-container .aws-search-form.aws-form-active:before {
-    border-bottom: 1px solid var(--wolmart-border-color); /* MEJORA: Variable de borde */
+    border-bottom: 1px solid var(--gray-40);
     position: absolute;
     height: 1px;
     left: 0;
     right: 0;
     bottom: 2px;
     z-index: 10;
-    margin: 0 8px 0 16px;
+    margin: 0 8px 0 16px
 }
 
-.aws-container .aws-search-form .aws-search-field,
-.aws-container .aws-search-form .aws-form-btn {
+.aws-container .aws-search-form .aws-search-field, .aws-container .aws-search-form .aws-form-btn {
     border: 0;
     font-size: 14px;
-    caret-color: var(--brand-secondary); /* MEJORA: Actualizado a la nueva paleta */
+    caret-color: var(--aero-100);
     background: transparent !important;
-    color: var(--brand-primary); /* MEJORA: Semántico (tu --night-80) */
+    color: var(--night-80);
     letter-spacing: -0.020em;
 }
 
 .aws-container .aws-search-form .aws-search-btn_icon {
-    border-left: 1px solid var(--wolmart-border-color); /* MEJORA: Variable de borde */
+    border-left: 1px solid var(--gray-60);
     color: var(--night-60);
     padding-left: 8px;
 }
 .aws-container .aws-search-form .aws-search-clear {
-    background: #fff;
+    background:#fff;
 }
 .aws-container .aws-search-form .aws-search-clear span {
     line-height: 18px;
@@ -116,21 +52,19 @@ header .wishlist i {
     text-align: center;
     height: 20px;
     width: 20px;
-    color: var(--brand-primary);
-    background: var(--gray-40); /* MEJORA: Tono de gris más claro */
+    color: var(--night-80);
+    background: var(--gray-60);
 }
-
 .aws-search-result {
     box-shadow: var(--shadow-xl);
-    border: 1px solid var(--wolmart-border-color); /* MEJORA: Variable de borde */
-    border-radius: 0 !important;
+    border: 1px solid var(--gray-40);
+    border-radius: 0!important;
     margin-top: 0.25rem;
-    overflow: hidden;
+    overflow: hidden
 }
 
-.aws-search-result.aws_no_result .aws_results .aws_result_item,
-.aws-search-result .aws_results .aws_result_item {
-    border-color: var(--wolmart-border-color); /* MEJORA: Variable de borde */
+.aws-search-result.aws_no_result .aws_results .aws_result_item, .aws-search-result .aws_results .aws_result_item {
+    border-color: var(--gray-40);
     padding: 5px 8px;
     display: flex;
     align-items: center;
@@ -140,7 +74,7 @@ header .wishlist i {
 }
 
 .aws-search-result.aws_no_result .aws_results .aws_result_item {
-    padding: 16px;
+    padding: 16px
 }
 
 .aws-search-result .aws_result_link {
@@ -148,8 +82,7 @@ header .wishlist i {
     padding: 8px 8px;
     align-items: center;
 }
-.aws-search-result .aws_result_user .aws_result_head img,
-.aws-search-result .aws_result_image img {
+.aws-search-result .aws_result_user .aws_result_head img, .aws-search-result .aws_result_image img {
     width: 28px;
     border: 1px solid;
     margin-top: 0;
@@ -175,3 +108,58 @@ header .wishlist i {
 
 .aws-search-result .aws_result_title {
     overflow: hidden;
+    color: var(--wolmart-dark-color, #333);
+    font-family: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 320px
+}
+
+.aws-search-result .aws_result_excerpt, .aws-search-result .aws_result_term {
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    letter-spacing: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 1.1rem;
+    color: var(--text-placeholder);
+    font-size: 12px;
+    padding-top: 0;
+    z-index: 1000
+}
+
+.woocommerce.aws-wishlist {
+    margin-left: 2px;
+    width: 30px;
+    text-align: center
+}
+
+.aws-search-result .aws_result_excerpt>a {
+    margin-top: 0;
+    font-weight: 500;
+    color: var(--night-60);
+    font-size: 10px;
+}
+
+.aws_result_excerpt a img {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: none
+}
+
+/* Cart Dropdown */
+.cart-dropdown .cart-toggle {
+    padding-right: 30px;
+}
+.cart-dropdown.badge-type .cart-count {
+    left: 33px;
+    top: 8px;
+    background: var(--aero-100);
+    width: 1.5em;
+    height: 1.5em;
+}
+/* ====================
+   1. HEADER
