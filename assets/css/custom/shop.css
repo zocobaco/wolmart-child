@@ -615,7 +615,7 @@ form.cart .quantity-wrapper {
 
 .quantity .qty {
     border: 1px solid var(--wolmart-border-color);
-    border-radius: 12px;
+    /* border-radius: 12px; */
 }
 
 .quantity.hidden,

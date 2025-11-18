@@ -15,11 +15,7 @@
     /* border-radius:var(--radius-sm); */ /* Comentado como en tu original */
 }
 
-.btn-rounded,
-.btn-rounded:after,
-.btn-rounded:before {
-    border-radius: var(--radius-sm);
-}
+
 
 /* Botón de Éxito (Usa la paleta Zocoba) */
 .btn-success {
