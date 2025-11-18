@@ -1,7 +1,13 @@
 /*
  * =========================================================================
- * INICIO DE ESTILOS DE TIENDA (new_shop.css)
+ * ZOCOBA - ESTILOS DE WOOCOMMERCE (Tienda y Producto Unificados)
  * =========================================================================
+ */
+
+/*
+ * ===================================
+ * INICIO DE ESTILOS DE TIENDA (new_shop.css)
+ * ===================================
  */
 .product-archive {
     display: flex;
@@ -391,11 +397,6 @@ p.price del {
     .wcfm_menu_toggle .wcfm_menu_logo h4 a {
         display: inline-block!important
     }
-    .wcfm-page-headig .wcfmfa,
-    .wcfm-page-heading-text,
-    .wcfm-page-headig .wcfm-page-heading-text {
-        /* Estilos vacíos en el original */
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -469,17 +470,11 @@ p.price del {
     }
 }
 
-/*
- * =========================================================================
- * FIN DE ESTILOS DE TIENDA
- * =========================================================================
- */
-
 
 /*
- * =========================================================================
+ * ===================================
  * INICIO DE ESTILOS DE PRODUCTO (new_product.css)
- * =========================================================================
+ * ===================================
  */
 
 /*====== General Product Page =========*/
@@ -528,8 +523,8 @@ p.price del {
 }
 
 .product-thumbs-wrap img {
-    /* object-fit: cover; */
-    /* border: 1px solid var(--wolmart-border-color); */
+    /* object-fit: cover; */ /* Comentado en tu archivo */
+    /* border: 1px solid var(--wolmart-border-color); */ /* Comentado en tu archivo */
 }
 
 .product-media .btn-product-icon,
@@ -614,7 +609,7 @@ form.cart .quantity-wrapper {
 
 .quantity .qty {
     border: 1px solid var(--wolmart-border-color);
-    /* border-radius: 12px; */
+    /* border-radius: 12px; */ /* Comentado en tu archivo */
 }
 
 .quantity.hidden,
@@ -940,8 +935,3 @@ span.wc-points-rewards-product-message,
         bottom: 0.25rem;
     }
 }
-/*
- * =========================================================================
- * FIN DE ESTILOS DE PRODUCTO
- * =========================================================================
- */

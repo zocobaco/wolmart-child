@@ -1,135 +1,57 @@
-#wcfmmp-user-locaton-map, .form-row .input-text,.form-row [type=text], .form-row .select, .select2-container--default .select2-selection--single {
+/*
+ * =========================================================================
+ * ZOCOBA - ESTILOS DE CHECKOUT, CARRITO Y MI CUENTA
+ * =========================================================================
+ */
+
+/* Estilos para Mi Cuenta */
+.woocommerce-MyAccount-navigation {
+    border: 1px solid var(--wolmart-border-color);
     border-radius: var(--radius-sm);
-    border: 1px solid var(--gray-40);
-    background: var(--white);
-    width: 100%;
-    min-height: 45px;
+    padding: 1rem;
 }
 
-p#billing_dni_field,p#billing_type_document_field { width: 50%}
+.woocommerce-MyAccount-navigation ul {
+    margin: 0;
+}
 
-#wcfmmp_user_location_field i.wcfmmmp_locate_icon { margin-top: 0}
+.woocommerce-MyAccount-navigation-link a {
+    padding: .8rem 1rem;
+    border-radius: var(--radius-sm);
+}
 
-.form-row label:not(.checkbox) {font-weight: 600}
+.woocommerce-MyAccount-navigation-link.is-active a {
+    background-color: var(--gray-20);
+    color: var(--brand-primary);
+}
 
-.cart-information,.payment-box,.woocommerce-checkout-review-order {
+/* Estilos de Checkout */
+.woocommerce-checkout .col-1,
+.woocommerce-checkout .col-2 {
     padding: 1.5rem;
-    line-height: 1.1;
-    position: sticky;
-    top: 60px;
-    border: 0;
-    /* background: var(--gray-20); */
-    /* border-radius: var(--radius-sm); */
-}
-
-#billing_postcode_field,h3#order_review_heading,p#billing_country_field {  display: none}
-
-.cart_item>.product-name {
-    width: 70%;
-    padding-right: 1.5rem
-}
-
-.shop_table .product-thumbnail a img {
-    border-radius: 8px;
-    /* border: 1px solid; */
-    /* overflow: hidden; */
-}
-
-.cart_item>.product-name dl {
-    margin: 3px 0 0;
-    justify-content: flex-start
-}
-
-dd.variation-Tienda a,dl.variation dt {
-    font-size: 12px;
-    margin-top: 2px;
-    font-weight: 500;
-    color: var(--night-60)
-}
-
-dd.variation-Tienda a {
-    color: var(--aero-100)
-}
-
-.woocommerce-checkout-review-order .woocommerce-shipping-totals h4 {
-    border-bottom: 1px solid var(--line-40);
-    padding-bottom: 1em
-}
-.woocommerce-checkout-review-order .order-total th,.woocommerce-checkout-review-order .order-total .woocommerce-Price-amount.amount {
-    font-weight: 800 !important;
-    color: var(--brand-night);
-    letter-spacing: -.035rem;
-	font-size:1.8rem;
-}
-.custom-input input[type=radio]+label {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    white-space: normal
-}
-
-.woocommerce-checkout-payment .wc_payment_methods li {
-    padding-bottom: 1rem
-}
-
-.payment_method_wompi img {
-    max-height: 35px
-}
-
-.wc-proceed-to-checkout .button, .woocommerce-checkout-review-order .button {
-    /* padding: 1rem; */
-    /* font-size: 15px; */
-    font-weight: 500;
-    /* background: #2bdf2b; */
-    border: 0;
-    /* color: var(--night-80); */
+    border: 1px solid var(--wolmart-border-color);
     border-radius: var(--radius-sm);
-    /* letter-spacing: -.04rem; */
 }
 
-.wc-proceed-to-checkout .button:hover, .woocommerce-checkout-review-order .button:hover {
-    /* background: var(--jonquil-100); */
-    /* border-color: var(--jonquil-100); */
+#order_review_heading,
+.woocommerce-checkout-review-order-table {
+    padding: 1.5rem;
+    border: 1px solid var(--wolmart-border-color);
+    border-radius: var(--radius-sm);
+    margin-top: 2rem;
 }
 
-.payment_box p {
-    line-height: 1.3;
-    font-size: 12px
+#payment {
+    padding: 1.5rem;
+    border: 1px solid var(--wolmart-border-color);
+    border-radius: var(--radius-sm);
+    margin-top: 1rem;
 }
 
-@media (min-width: 1025px) {
-    .woocommerce-checkout-review-order-table .cart_item>.product-name span {
-        overflow:hidden;
-        line-height: 1.2;
-        text-overflow: ellipsis;
-        max-width: 240px
-    }
-
-    .wc-block-components-sidebar-layout {
-        height: calc(100vh - 55px + 10px);
-        overflow: hidden;
-        margin: 0
-    }
-
-    .wc-block-components-sidebar-layout .wc-block-components-main {
-        padding: 0 1.5em 150px;
-        overflow-y: scroll;
-        height: 100%
-    }
-}
-
+/* Estilos Móviles de Checkout (desde mobile-responsive) */
 @media (max-width: 767px) {
-    #billing_city_field,#billing_first_name_field,#billing_last_name_field,#billing_state_field {
-        width:50%
+    .woocommerce-checkout .col-1,
+    .woocommerce-checkout .col-2 {
+        padding: 1rem;
     }
-	.form-row.place-order {
-    position: fixed;
-    bottom: 0;
-    left: 0px;
-    right: 0;
-    padding: .5rem 1rem;
-    background: #fff;
-   }
 }

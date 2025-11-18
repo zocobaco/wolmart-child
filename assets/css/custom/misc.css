@@ -15,7 +15,11 @@
     /* border-radius:var(--radius-sm); */ /* Comentado como en tu original */
 }
 
-
+.btn-rounded,
+.btn-rounded:after,
+.btn-rounded:before {
+    border-radius: var(--radius-sm);
+}
 
 /* Botón de Éxito (Usa la paleta Zocoba) */
 .btn-success {
@@ -120,8 +124,6 @@
 }
 
 /* ====== Utilidades de Sombra ====== */
-/* MEJORA: He eliminado las sombras duplicadas (shadowL, shadowlg, etc.)
-   y las he dejado con los tokens correctos de tu variables.css */
 .shadow-xl {
     box-shadow: var(--shadow-xl);
 }
@@ -144,6 +146,12 @@
     color: var(--brand-primary);
     fill: var(--brand-primary);
 }
+
+/* =========================================================================
+ * ESTILOS GLOBALES (Misceláneos)
+ * =========================================================================
+ */
+
 /* Custom Global */
 .icon-circle{
     width: 40px;
@@ -152,7 +160,7 @@
     overflow: hidden;
 }
 
-/* MEJORA: Actualizado al nuevo color naranja de la marca */
+/* Títulos de WCFM (Dashboard de Vendedor) */
 .wcfm_appointment_title, 
 .wcfm_auctions_title, 
 .wcfm_booking_title, 
@@ -175,7 +183,7 @@
 .vendor-widget .vendor-logo {
     height: 7rem;
     background-color: var(--gray-20); /* MEJORA: Gris de fondo más sutil */
-    border-radius: var(--radius-md);  /* MEJORA: Corregido 'border' por 'border-radius' */
+    border-radius: var(--radius-md);
 }
 
 /* Footer */
@@ -186,11 +194,6 @@
     font-weight: 500;
 }
 
-/*
- * ARCHIVO: assets/css/custom/misc.css
- * (Añadir estos estilos para la paginación)
- */
-
 /* === Pagination Styles === */
 .page-numbers, 
 .pagination-footer .links .post-page-numbers {
@@ -199,7 +202,7 @@
     border-radius: var(--radius-md); /* MEJORA: Usa token de radio */
 }
 
-/* MEJORA: Usa el color secundario (naranja) de Zocoba para la paginación */
+/* Paginación activa usa el color de marca Zocoba */
 .page-numbers.current, 
 .page-numbers:hover,
 .pagination-footer .links .post-page-numbers.current,
