@@ -526,12 +526,11 @@ p.price del {
 .product-thumb:after,
 .product-thumb.active:after {
     border-radius: var(--radius-sm);
-    height: 50px;
 }
 
 .product-thumbs-wrap img {
-    object-fit: cover;
-    border: 1px solid var(--wolmart-border-color);
+    /* object-fit: cover; */
+    /* border: 1px solid var(--wolmart-border-color); */
 }
 
 .product-media .btn-product-icon,
