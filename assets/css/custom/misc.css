@@ -1,7 +1,153 @@
 /*
  * ARCHIVO: assets/css/custom/misc.css (Optimizado)
  */
+/*
+ * =========================================================================
+ * ESTILOS DE UTILIDAD DE ZOCOBA
+ * (Movido desde el antiguo utilities.css)
+ * =========================================================================
+ */
 
+/* ====== Botones Personalizados ====== */
+.button, .btn {
+    font-weight: 400;
+    text-transform: none;
+    /* border-radius:var(--radius-sm); */ /* Comentado como en tu original */
+}
+
+.btn-rounded,
+.btn-rounded:after,
+.btn-rounded:before {
+    border-radius: var(--radius-sm);
+}
+
+/* Botón de Éxito (Usa la paleta Zocoba) */
+.btn-success {
+    color: var(--white); /* MEJORA: Texto blanco para mejor contraste */
+    border-color: var(--brand-accent);
+    background-color: var(--brand-accent);
+}
+.btn-success:hover {
+    color: var(--white);
+    border-color: var(--green-120);
+    background-color: var(--green-120);
+}
+
+/* ====== Utilidades de Bordes ====== */
+.bor { 
+    border: 1px solid;
+}
+.bor-t { 
+    border-width: 1px 0 0 0 !important;
+}
+.bor-l { 
+    border-width: 0 1px 0 0 !important;
+}
+.bor-r { 
+    border-width: 0 0 0 1px !important;
+}
+.bor-b { 
+    border-width: 0 0 1px 0 !important;
+}
+
+/* Clases de color de borde (usa variables semánticas) */
+.bor-light {
+    border-color: var(--wolmart-border-color); /* MEJORA: usa variable del padre */
+}
+.bor-dark {
+    border-color: var(--night-60);
+}
+.bor-white {
+    border-color: var(--white);
+}
+.bor-primary {
+    border-color: var(--brand-primary); /* MEJORA: usa color Zocoba */
+}
+.bor-second {
+    border-color: var(--brand-secondary); /* MEJORA: usa color Zocoba */
+}
+
+/* ====== Utilidades de Fondos (Wash) ====== */
+.wash-white {
+    background: var(--white);
+}
+.wash-gray {
+    background: var(--gray-20);
+}
+.wash-dark {
+    background: var(--night-80);
+}
+.wash-aero-light {
+    background: var(--aero-wash);
+}
+.wash-aero {
+    background: var(--brand-secondary); /* MEJORA: usa color Zocoba */
+}
+.wash-aero-dark {
+    background: var(--aero-120);
+}
+.wash-green-light {
+    background: var(--green-wash);
+}
+.wash-green {
+    background: var(--brand-accent); /* MEJORA: usa color Zocoba */
+}
+.wash-green-dark {
+    background: var(--green-120);
+}
+
+/* ====== Utilidades de Texto ====== */
+.text-link {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
+.text-gray {
+    color: var(--gray-100) !important;
+}
+.text-aero {
+    color: var(--brand-secondary) !important; /* MEJORA: usa color Zocoba */
+}
+.text-aero-light {
+    color: var(--aero-50);
+}
+.text-aero-dark {
+    color: var(--aero-120);
+}
+.text-green {
+    color: var(--brand-accent) !important; /* MEJORA: usa color Zocoba */
+}
+.text-green-light {
+    color: var(--green-50);
+}
+.text-green-dark {
+    color: var(--green-120);
+}
+
+/* ====== Utilidades de Sombra ====== */
+/* MEJORA: He eliminado las sombras duplicadas (shadowL, shadowlg, etc.)
+   y las he dejado con los tokens correctos de tu variables.css */
+.shadow-xl {
+    box-shadow: var(--shadow-xl);
+}
+.shadow-lg {
+    box-shadow: var(--shadow-lg);
+}
+.shadow-md {
+    box-shadow: var(--shadow-md);
+}
+.shadow-xs {
+    box-shadow: var(--shadow-xs);
+}
+
+/* ====== Utilidades de Contenido ====== */
+.z-con-main .body {
+    font-weight: 400;
+    line-height: 1.4;
+}
+.z-con-main .icon {
+    color: var(--brand-primary);
+    fill: var(--brand-primary);
+}
 /* Custom Global */
 .icon-circle{
     width: 40px;
