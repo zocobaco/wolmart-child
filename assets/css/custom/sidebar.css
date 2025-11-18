@@ -85,3 +85,28 @@
     border: 0;
     border-radius: var(--radius-sm); /* Ya usa tu token. ¡Bien! */
 }
+
+/*
+ * ARCHIVO: assets/css/custom/sidebar.css
+ * (Añadir estos estilos para el widget de categorías)
+ */
+
+.categories_list li.parent_cat {
+    font-weight: 600;
+    margin-top: 5px !important;
+}
+
+.categories_list li.child_cat {
+    margin: 3px 0 !important;
+}
+
+.categories_list li.child2_cat {
+    background: var(--gray-20); /* MEJORA: Usa tu token de fondo */
+    border-radius: var(--radius-circle); /* MEJORA: Usa tu token para 'píldora' */
+    padding: 1px 5px !important;
+    margin-bottom: .5rem !important;
+}
+
+.categories_list li.child2_cat a {
+    font-size: 13px;
+}

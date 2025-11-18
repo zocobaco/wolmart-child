@@ -43,3 +43,30 @@
     color: var(--night-40); /* MEJORA: Usa un color de texto de tu paleta */
     font-weight: 500;
 }
+
+/*
+ * ARCHIVO: assets/css/custom/misc.css
+ * (Añadir estos estilos para la paginación)
+ */
+
+/* === Pagination Styles === */
+.page-numbers, 
+.pagination-footer .links .post-page-numbers {
+    min-width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--radius-md); /* MEJORA: Usa token de radio */
+}
+
+/* MEJORA: Usa el color secundario (naranja) de Zocoba para la paginación */
+.page-numbers.current, 
+.page-numbers:hover,
+.pagination-footer .links .post-page-numbers.current,
+.pagination-footer .links .post-page-numbers:hover {
+    border-color: var(--brand-secondary);
+    background: var(--brand-secondary);
+    color: var(--white);
+}
+
+.pagination {
+    font-size: 1.2rem;
+}
