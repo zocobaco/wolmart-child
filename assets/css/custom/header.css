@@ -161,5 +161,19 @@ header .account i,header .cart-toggle i,header .compare-open i,header .contact i
     width: 1.5em;
     height: 1.5em;
 }
-/* ====================
-   1. HEADER
+@media (max-width: 767px) {
+    .aws-container.aws-mobile-fixed {
+       display: flex;
+       align-items: center;
+       border-bottom: 1px solid var(--wolmart-border-color); /* MEJORA: Variable semántica */
+    }
+    .aws-search-result.less500 {
+       width: 100% !important;
+       height: 100%;
+       border: 0;
+       left: 0 !important;
+       right: 0;
+       box-shadow: none;
+       padding: 0 1rem;
+    }
+}

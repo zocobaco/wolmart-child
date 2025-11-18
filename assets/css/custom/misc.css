@@ -1,0 +1,45 @@
+/*
+ * ARCHIVO: assets/css/custom/misc.css (Optimizado)
+ */
+
+/* Custom Global */
+.icon-circle{
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    overflow: hidden;
+}
+
+/* MEJORA: Actualizado al nuevo color naranja de la marca */
+.wcfm_appointment_title, 
+.wcfm_auctions_title, 
+.wcfm_booking_title, 
+.wcfm_coupon_title, 
+.wcfm_dashboard_item_title, 
+.wcfm_listing_title, 
+.wcfm_order_title, 
+.wcfm_product_title {
+    font-weight: 400;
+    color: var(--brand-secondary); /* ¡Color de Zocoba! */
+}
+
+/* Custom Page Blog*/
+.single-post .container {
+    max-width: calc(800px - 40px)!important;
+    margin: auto;
+}
+
+/* Custom Seller Sold By */
+.vendor-widget .vendor-logo {
+    height: 7rem;
+    background-color: var(--gray-20); /* MEJORA: Gris de fondo más sutil */
+    border-radius: var(--radius-md);  /* MEJORA: Corregido 'border' por 'border-radius' */
+}
+
+/* Footer */
+.text-copyright, 
+.text-footer {
+    font-size: var(--font-size-xs);
+    color: var(--night-40); /* MEJORA: Usa un color de texto de tu paleta */
+    font-weight: 500;
+}

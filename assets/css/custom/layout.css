@@ -1,14 +1,17 @@
+/*
+ * ARCHIVO: assets/css/custom/layout.css (Optimizado)
+ */
+
 /* Slider Button */
 .slider-nav-circle .slider-button {
     border: 0;
     font-size: 18px;
-    color: var(--night-100);
-    background: var(--gray-40);
+    color: var(--brand-primary); /* MEJORA: Usa el color primario de la marca */
+    background: var(--gray-20);   /* MEJORA: Usa un gris de fondo más sutil */
 }
-.slider-button:before {/* content: "\f060"; *//* font-family: "Font Awesome 6 Pro"; */}
+.slider-button:before {/* content: "\f060"; */ /* font-family: "Font Awesome 6 Pro"; */}
 .slider-button-next:before {
-    /* content: "\f061"; */
-    /* font-family: "Font Awesome 6 Pro"; */
+    /* content: "\f061"; */ /* font-family: "Font Awesome 6 Pro"; */
 }
 .slider-button-prev {
     margin-right: .8rem;
@@ -22,14 +25,31 @@ main, .wcfm-store-list-page #main, .wcfm-store-page #main {
     padding-bottom: 0;
 }
 
-.wolmart-rounded-skin .alert, .wolmart-rounded-skin .alert .btn, .wolmart-rounded-skin .calendar_wrap caption, .wolmart-rounded-skin .cat-type-frame, .wolmart-rounded-skin .comment-respond .btn-submit, .wolmart-rounded-skin .form-control, .wolmart-rounded-skin .instagram figure:before, .wolmart-rounded-skin .instagram img, .wolmart-rounded-skin .post-calendar, .wolmart-rounded-skin .post-tags>a, .wolmart-rounded-skin .product .countdown-container, .wolmart-rounded-skin .product-hide-details .btn-product, .wolmart-rounded-skin .product-list .btn-product, .wolmart-rounded-skin .tagcloud>a, .wolmart-rounded-skin .wolmart-compare-table .compare-value .label-swatch, .wolmart-rounded-skin .wpcf7-form-control {
+/* Esta sección ya usa tus tokens. ¡Perfecto! */
+.wolmart-rounded-skin .alert, 
+.wolmart-rounded-skin .alert .btn, 
+.wolmart-rounded-skin .calendar_wrap caption, 
+.wolmart-rounded-skin .cat-type-frame, 
+.wolmart-rounded-skin .comment-respond .btn-submit, 
+.wolmart-rounded-skin .form-control, 
+.wolmart-rounded-skin .instagram figure:before, 
+.wolmart-rounded-skin .instagram img, 
+.wolmart-rounded-skin .post-calendar, 
+.wolmart-rounded-skin .post-tags>a, 
+.wolmart-rounded-skin .product .countdown-container, 
+.wolmart-rounded-skin .product-hide-details .btn-product, 
+.wolmart-rounded-skin .product-list .btn-product, 
+.wolmart-rounded-skin .tagcloud>a, 
+.wolmart-rounded-skin .wolmart-compare-table .compare-value .label-swatch, 
+.wolmart-rounded-skin .wpcf7-form-control {
     border-radius: var(--radius-sm);
 }
 
 .wolmart-rounded-skin .btn-product,
 .wolmart-rounded-skin > div{
-    border-radius: var(--radius-sm)!important
+    border-radius: var(--radius-sm) !important;
 }
+
 /* Breadcrumb */
 .archive:not(.breadcrumb-divider-active) .breadcrumb-container+main {
     padding-top: 0;
@@ -47,136 +67,19 @@ main, .wcfm-store-list-page #main, .wcfm-store-page #main {
 .woocommerce-form-login .form-row label {
     margin-bottom: 2px;
 }
-.woocommerce-form-login .form-row .input-text {
-    /* border-radius: var(--radius-md); */
-}
 .woocommerce-form-login .form-row {
     margin-bottom: 1rem;
 }
-.woocommerce-form-login .button {
-    /* text-transform: capitalize; */
-}
+
+/* Login Popup */
 .login-popup {
     max-width: calc(var(--container-xs) - 40px);
     padding: 1rem 2rem;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-sm); /* Ya usa tu token. ¡Bien! */
 }
-.login-popup .nav-link {text-transform: capitalize}
-
-.login-popup .tab-pane { padding-top: 1rem }
-
-
-
-/* Sidebar */
-.sidebar-fixed.left-sidebar {padding: 0 1.5rem;max-width: 26rem;width: 26rem;}
-#wcfmmp-store .sidebar-fixed.left-sidebar { padding-left: 0;max-width: 26rem;}
-.sidebar .widget,#wcfmmp-store .sidebar .widget  {/* margin-bottom: 1rem; */}
-.sidebar.shop-sidebar .filter-actions label,.sidebar-content:not(.toolbox-left) .widget-title, .sidebar:not(.shop-sidebar) .widget .widget-title {
-    font-size: var(--font-size-md);
-    border-color: var(--gray-40);
-    text-transform:math-auto;
-    letter-spacing: -0.04rem;
-    padding: 1rem 0;
+.login-popup .nav-link {
+    text-transform: capitalize;
 }
-.sidebar-content:not(.toolbox-left) .widget-title.collapsed { border: 0}
-
-.sidebar-content:not(.toolbox-left) .wt-area:before { display: none}
-
-.wc-block-attribute-filter ul,.widget-collapsible:not(.widget-block) .product-cat-stack-dokan#cat-drop-stack,.widget-collapsible:not(.widget-block) .store-cat-stack-dokan#cat-drop-stack,
-.widget-collapsible:not(.widget-block)>ul {
-    margin-top: 0 !important;
-    height: auto;
-    max-height: 205px;
-    overflow: hidden auto
-}
-
-.single-product .widget-collapsible:not(.widget-block)>ul { max-height: 180px}
-.sidebar-content .wc-block-components-checkbox { margin-top: .5em}
-.sidebar .widget li,#wcfmmp-store ul.categories_list>li, 
-#wcfmmp-store ul.product-categories>li {
-    padding: 0;
-    margin: 0;
-    position: relative
-}
-
-.sidebar .sidebar-content .widget li>a {
-    width: 100%;
-    padding-top: .3rem;
-    padding-bottom: .3rem;
-    display: flex;
-    gap: 0.3rem;
-    align-items: center;
-}
-.sidebar .wc-block-product-categories-list--has-images .wc-block-product-categories-list-item__image {
-    margin: 0 .5em 0 0;
-    max-width: 28px;
-}
-.sidebar .wolmart-price-range {
-    display: flex;
-    align-items: center;
-    gap: .5rem
-}
-
-.sidebar .wolmart-price-range input {
-    border-radius: 8px;
-    height: 36px
-}
-
-.sidebar .wolmart-price-range button {
-    margin: 5px 0;
-    width: 100%;
-    border: 0;
-    border-radius: var(--radius-sm)
-}
-
-
-@media (max-width: 767px) {
-	.aws-container.aws-mobile-fixed {
-       display: flex;
-       align-items: center;
-       border-bottom: 1px solid;
-    }
-	.aws-search-result.less500 {
-       width: 100% !important;
-       height: 100%;
-       border: 0;
-       left: 0 !important;
-       right: 0;
-       box-shadow: none;
-       padding: 0 1rem;
-    }
-		
-}
-/*==============================================================================================================*/
-
-/* Custom Global  */
-.icon-circle{
-    width: 40px;
-    height: 40px;
-	font-size: 24px;
-    overflow: hidden;
-}
-.wcfm_appointment_title, .wcfm_auctions_title, .wcfm_booking_title, .wcfm_coupon_title, .wcfm_dashboard_item_title, .wcfm_listing_title, .wcfm_order_title, .wcfm_product_title {
-    font-weight: 400;
-    color: var(--aero-100);
-}
-/* Custom Page Blog*/
-.single-post .container {
-    max-width: calc(800px - 40px)!important;
-    margin: auto;
-}
-
-/* Custom Seller Sold By*/*
-.vendor-widget .vendor-logo {
-    height: 7rem;
-    background-color: var(--gray-40);
-    border: var(--radius-md);
-}
-
-
-/* Footer*/
-.text-copyright, .text-footer {
-    font-size: var(--font-size-xs);
-    color: var(--gray-100);
-    font-weight: 500;
+.login-popup .tab-pane { 
+    padding-top: 1rem;
 }
