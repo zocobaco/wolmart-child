@@ -48,8 +48,19 @@
     margin-top: 1rem;
 }
 
-/* Estilos Móviles de Checkout (desde mobile-responsive) */
+/*
+ * ==================================
+ * ESTILOS MÓVILES DE CHECKOUT
+ * ==================================
+ */
 @media (max-width: 767px) {
+    #billing_first_name_field, 
+    #billing_last_name_field, 
+    #billing_city_field, 
+    #billing_state_field {
+        width: 50%;
+    }
+
     .woocommerce-checkout .col-1,
     .woocommerce-checkout .col-2 {
         padding: 1rem;
