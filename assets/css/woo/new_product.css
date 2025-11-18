@@ -1,9 +1,6 @@
 /** Zocoba - Single Product Styles (Optimizado) **/
 
 /*====== General Product Page =========*/
-.single-product .container {
-    max-width: 1080px;
-}
 .single-product .product-wrap {
     margin-bottom: 0.25rem;
     margin-right: 10px !important;
@@ -39,8 +36,7 @@
 =============================================*/
 .pg-vertical .product-single-carousel-wrap {
     max-width: calc(100% - 60px);
-    max-height: 550px;
-    border: 1px solid var(--wolmart-border-color); /* MEJORA: Variable de borde */
+      border: 1px solid var(--wolmart-border-color); /* MEJORA: Variable de borde */
 }
 .pg-vertical .product-thumbs-wrap {
     max-width: 50px;
@@ -49,12 +45,6 @@
 .product-thumb:after,
 .product-thumb.active:after {
     border-radius: var(--radius-sm);
-    height: 50px;
-}
-
-.product-thumbs-wrap img {
-    object-fit: cover;
-    border: 1px solid var(--wolmart-border-color); /* MEJORA: Variable de borde */
 }
 
 .product-media .btn-product-icon,
@@ -66,13 +56,12 @@
     padding: 0;
     font-size: var(--font-size-md);
     line-height: 29px;
-    color: var(--night-60); /* MEJORA: Color de texto */
+    color: var(--night-60); 
     background: var(--white);
-    border: 1px solid var(--wolmart-border-color); /* MEJORA: Variable de borde */
+    border: 1px solid var(--wolmart-border-color); 
     border-radius: var(--radius-circle);
 }
 
-/* MEJORA: Estado activo usa colores Zocoba */
 .product-media .exists.btn-product-icon {
     color: var(--brand-secondary);
     background: var(--aero-wash);
@@ -113,12 +102,12 @@ a.btn-product-icon.compare:before {
 .product-cat {
     font-weight: 600;
     letter-spacing: -.03rem;
-    text-transform: none; /* MEJORA: 'math-auto' es inválido */
+    text-transform: none; 
 }
 
 .product-meta-inner,
 .woocommerce-product-details__short-description {
-    font-size: var(--font-size-sm); /* MEJORA: Token corregido */
+    font-size: var(--font-size-sm); 
     line-height: 1.4;
 }
 
@@ -166,7 +155,6 @@ form.cart label {
     background-color: var(--night-60) !important;
 }
 
-/* MEJORA: Mensajes WCFM con colores de marca Zocoba */
 span.wc-points-rewards-product-message,
 .points.hide-on-price-available,
 .single-product .wcfmmp_shipment_processing_display {
@@ -218,7 +206,7 @@ span.wc-points-rewards-product-message,
     padding: 0 4px !important;
     font-size: 14px !important;
     line-height: 30px;
-    border: 1px solid var(--wolmart-border-color) !important; /* MEJORA: Variable de borde */
+    border: 1px solid var(--wolmart-border-color) !important; 
     border-radius: 50%;
     transition: color 0.3s, background 0.3s, border 0.3s;
 }
