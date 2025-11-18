@@ -1,37 +1,15 @@
-/* Main Content Padding */
-main, 
-.wcfm-store-list-page #main, 
-.wcfm-store-page #main {
-    padding-top: 1.5rem;
-}
+/*
+ * ARCHIVO: assets/css/woo/new_shop.css (Optimizado)
+ */
 
-.categories_list li.parent_cat {
-	font-weight: 600;
-	margin-top: 5px !important
-}
-
-.categories_list li.child_cat {
-    margin: 3px 0 !important
-}
-
-.categories_list li.child2_cat {
-    background: var(--gray-20);
-    border-radius: 20px;
-    padding: 1px 5px !important;
-    margin-bottom: .5rem !important
-}
-
-.categories_list li.child2_cat a {
-    font-size: 13px;
-}
 .product-archive {
     display: flex;
     justify-content: center;
 }
 
-
-/* WooCommerce Alert Styles */
-.wolmart-rounded-skin .alert, .woocommerce-message.alert {
+/* === WooCommerce Alert Styles === */
+.wolmart-rounded-skin .alert, 
+.woocommerce-message.alert {
     font-size: var(--font-size-sm);
     line-height: 1.2;
     padding: 10px 12px;
@@ -44,42 +22,23 @@ main,
     top: 50%;
 }
 
-.woocommerce .alert-info a:not(.btn), .woocommerce .alert-info i {
-    color: var(--blue-120);
-}
-
-.alert-simple.alert-info {
-    background: var(--blue-wash);
-    color: var(--blue-120);
-}
-
-.woocommerce-message.alert.alert-simple.alert-btn.alert-success {
-    background: linear-gradient(135deg, var(--green-40), var(--green-wash));
-    color: var(--green-120);
-}
-
 .wolmart-rounded-skin .alert a { /* Alert Button */
-    background-color: var(--green-120);
     border: 0;
-    color: #fff;
+    color: var(--white); /* MEJORA: Usa token */
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: var(--radius-xs); /* MEJORA: Usa token (4px o 5px es 'xs') */
     transition: background-color 0.2s ease;
     margin-right: 3.5rem;
 }
 
-.wolmart-rounded-skin .alert.alert-success a:hover {
-    background-color: #1b5e20;
-}
-
-
-/* Toolbox Styles */
+/* === Toolbox Styles === */
 .toolbox .toolbox-toggle {
     border-radius: var(--radius-sm);
-    border: 1px solid;
+    border: 1px solid var(--wolmart-border-color); /* MEJORA: Variable semántica */
 }
 
-.toolbox-left > *, .toolbox-right > * {
+.toolbox-left > *, 
+.toolbox-right > * {
     margin-right: 1rem;
 }
 
@@ -89,102 +48,60 @@ main,
 
 .btn-showtype {
     font-size: 16px;
-    border: 1px solid var(--night-80);
-    padding: 9px !important; /* Consider removing !important */
+    border: 1px solid var(--brand-primary); /* MEJORA: Usa tu color primario */
+    padding: 9px !important;
     border-radius: var(--radius-sm);
 }
+
 /* =========================================================================
-/*  Product Styles
-/* =======================================================================*/
+ * Product Styles
+ * =======================================================================*/
 .product-wrap {
     margin-bottom: 1rem;
 }
 
 .product-boxed {
-    padding: 6px;
-    height: 100%;
-    border-radius: var(--radius-sm) !important;
-    overflow: hidden;
+    padding: 5px;
+    border-color: var(--wolmart-border-color); /* MEJORA: Variable semántica */
 }
 
-.product-boxed:hover {
-    box-shadow: var(--shadow-sm);
-}
-
-.product-archive .product-cart-bottom {
-    /* height: 100%; */
-}
-
-/* WCFM Product Settings */
-.wcfm_buttons {
-    top: .5rem;
-    left: .5rem;
-    padding: 0;
-    background-color: transparent;
-    z-index: 55;
-}
-
-.wcfm_buttons .wcfm_button_separator {
-    display: none;
-}
-
-.wcfm_buttons .wcfm_button {
-    margin-right: .35rem;
-}
-
-.wcfm_buttons .wcfm_button:hover {
-    background: var(--gray-40);
-}
 /* Product Action */
 .product-action-vertical {
-    top: .3rem;
-    right: .3rem;
+    top: .5rem;
+    right: .5rem;
 }
+
 /* Product Label */
 .product-label-group {
-    top: .3rem !important;
-    left: .3rem !important;
+    top: .5rem !important;
+    left: .5rem !important;
     max-width: 100%;
     flex-direction: row;
-    gap: 3px;
+    gap: 5px;
 }
 
 .product-label {
-    padding: .35rem .55rem !important;;
-    text-transform: capitalize;
-    border-radius: var(--radius-xs) !important;
-    font-size: 1.15rem !important;
+    padding: .35rem .55rem !important;
+    border-radius: 0 !important;
+    font-size: 1.1rem !important;
     margin: 0;
     overflow: hidden;
 }
 
-.product-label.label-featured {
-    background: var(--green-50);
-    color: var(--green-120);
-    max-width: 23px;
-}
-
+/* MEJORA: Asegúrate de que Font Awesome 6 Pro esté cargado */
 .product-label.label-featured::before {
     content: "\f005";
-    font-family: "Font Awesome 6 Pro";
+    font-family: "Font Awesome 6 Pro"; 
     font-weight: 600;
     margin-right: 5px;
 }
 
-.product-label.label-stock {
-    color: var(--night-100);
-}
-
-.product-media img {
-    transition: opacity 0.2s;
-    border-radius: var(--radius-sm);
-}
-
 .product-sticky-cart .product-details,
 .product-boxed .product-details {
-    padding: 10px 5px 5px;
+    padding: 5px 5px;
     height: auto;
 }
+
 .products .woocommerce-loop-product__title {
     letter-spacing: -.03rem;
     padding-right: 0;
@@ -192,132 +109,97 @@ main,
     font-weight: 400;
 }
 
-.star-rating + a, .wolmart-sold-by-container {
-    color: var(--gray-100);
-}
-
-
-
-
-
 p.price {
     font-size: 1.8rem;
-    border-top: 1px solid var(--gray-40);
 }
+
 .product-archive .price {
     font-size: 1.4rem;
 }
 
-.price del,p.price del {
+.price del,
+p.price del {
     font-size: 1.2rem;
-    color: var(--gray-80);
 }
 
-.product-wrap .sold-by-logo {
-    position: absolute;
-    bottom: 8px;
-    border-radius: 4px;
-    overflow: hidden;
-    height: 18px;
-    width: 18px;
-    background: var(--white);
-    object-fit: cover;
-}
-.product-cart-bottom .product-variations>* {
-    box-shadow: var(--shadow-md);
-}
 /* Product Button Styles */
-.product-classic .btn-product, .product-list .btn-product {
+.product-classic .btn-product, 
+.product-list .btn-product {
     text-transform: math-auto;
-    border: 1px solid var(--night-80) !important;
-    color: var(--night-80);
+    border: 1px solid var(--brand-primary) !important; /* MEJORA: Color Zocoba */
+    color: var(--brand-primary); /* MEJORA: Color Zocoba */
     background-color: transparent;
     max-height: 3.5rem;
     padding: 0 .75rem;
 }
 
-.product-details .add_to_cart_button:before, .product-hide-details .add_to_cart_button:before,.product-list .add_to_cart_button::before,.single_add_to_cart_button:before { /* Use ::before */
+.product-details .add_to_cart_button::before, 
+.product-hide-details .add_to_cart_button::before,
+.product-list .add_to_cart_button::before,
+.single_add_to_cart_button::before {
     content: "\e653";
     font-family: 'Font Awesome 6 Pro';
     max-width: 26px;
 }
 
-.product-details .btn-product-icon, .product-hide-details .btn-product-icon {
+.product-details .btn-product-icon, 
+.product-hide-details .btn-product-icon {
     width: 3.5rem;
-    border: 1px solid;
+    border: 1px solid var(--wolmart-border-color); /* MEJORA: Variable semántica */
     border-radius: var(--radius-sm);
-    margin-left: .75rem; /* Simplified margin */
+    margin-left: .75rem;
 }
-.single_add_to_cart_button, .single_buy_now_button,.wolmart-rounded-skin .product-cart-bottom .btn-product{
-	border-radius: var(--radius-sm)!important;
-}
-.single_add_to_cart_button, .single_buy_now_button {
+
+.single_add_to_cart_button, 
+.single_buy_now_button {
     margin-bottom: .5rem;
 }
+
 .wolmart-rounded-skin .product-cart-bottom .btn-product {
     font-size: 1.3rem;
     letter-spacing: -0.040rem;
     gap: 5px;
 }
-.product-details .add_to_cart_button, .product-hide-details .add_to_cart_button {
-    display: inherit;
-    text-indent: inherit;
-}
-/* Pagination Styles */
-.page-numbers, .pagination-footer .links .post-page-numbers {
-    min-width: 2.5rem;
-    height: 2.5rem;
-    border-radius: var(--radius-md);
-}
-
-.page-numbers.current, .page-numbers:hover,
-.pagination-footer .links .post-page-numbers.current,
-.pagination-footer .links .post-page-numbers:hover {
-    border-color: var(--night-100);
-    background: var(--night-100);
-    color: var(--white);
-}
-
-.pagination {
-    font-size: 1.2rem;
-}
-
 
 /* =========================================================================
-/*  Style Offert Home
-/* =======================================================================*/
+ * Style Offert Home (Ofertas)
+ * =======================================================================*/
+
+/* MEJORA: Usa el color secundario (naranja) de Zocoba para las ofertas */
 .body-offers-flash .product-boxed {
-    border-color: var(--aero-100);
+    border-color: var(--brand-secondary);
 }
+
 .product .countdown-container {
     left: 2px;
     right: 2px;
     bottom: 2px;
-    background-color: #ffffff75;
-    box-shadow: var(--shadow-lg);
-    color: var(--night-80);
-    letter-spacing: -0.035em
+    background-color: rgba(255, 255, 255, 0.75); /* MEJORA: rgba explícito */
+    box-shadow: var(--shadow-lg); /* MEJORA: Usa token de sombra */
+    color: var(--brand-primary); /* MEJORA: Usa color primario */
+    letter-spacing: -0.035em;
 }
+
 .product .countdown-container .countdown-amount {
     font-size: 1.3rem;
     font-weight: 600;
-    letter-spacing: -0.04rem
-    
+    letter-spacing: -0.04rem;
 }
 
 .product .countdown-container .countdown-period {
     letter-spacing: -0.04rem;
-    bottom: 0.8rem
+    bottom: 0.8rem;
 }
 
 .product .countdown-container .countdown-section {
-    padding: 0.8rem .8rem 2rem
+    padding: 0.8rem .8rem 2rem;
 }
 
 .product .countdown-container .countdown-section:not(:last-child) {
-    margin-right: .8rem
+    margin-right: .8rem;
 }
 
+/* === Responsive Product List === */
 @media (min-width: 576px) {
     .product-list .product-media {
         flex: 0 0 20rem;
@@ -327,16 +209,7 @@ p.price {
     .product-list .product-details {
         max-width: calc(100% - 20rem);
     }
-     .product-list .product-details .btn-product {
+    .product-list .product-details .btn-product {
         min-width: 20rem;
     }
 }
-}
-
-
-
-
-
-
-
-
