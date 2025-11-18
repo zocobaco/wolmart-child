@@ -84,5 +84,5 @@
   /* Layout */
   --wolmart-container-width: 1160px;
   --wolmart-border-radius: var(--radius-sm); /* Mapea a tu radio de 8px */
-  --wolmart-border-color: var(var(--gray-40)) /* #eaeaeb */
+  --wolmart-border-color: var(--gray-40) /* #eaeaeb */
 }
