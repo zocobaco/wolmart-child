@@ -898,7 +898,14 @@ span.wc-points-rewards-product-message,
 .mfp-product .product.row {
     border-radius: var(--radius-lg);
 }
-
+.woocommerce-tabs.accordion {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+.accordion-border .card {
+    border: solid var(--wolmart-border-color);
+    border-width: 1px 0 0;
+}
 /*====== Responsive Media Queries ======*/
 @media (min-width: 920px) {
     .single-product-page .product-single>.col-md-6:nth-child(1) {
