@@ -39,12 +39,8 @@ add_action('wp_enqueue_scripts', function () {
     // 5. Estilos condicionales de WooCommerce (Para optimizar la carga)
     if (class_exists('WooCommerce')) {
         // Estilos para archivo de tienda/categoría
-        if (is_shop() || is_product_category() || is_product_tag()) {
-            wp_enqueue_style('zcb-shop', ZCB_CSS_URI . '/woo/new_shop.css', ['wolmart-theme-child'], '1.0');
-        }
-        // Estilos para página de producto individual
-        if (is_product() ){
-           wp_enqueue_style('zcb-product', ZCB_CSS_URI . '/woo/new_product.css', ['wolmart-theme-child'], '1.0');
+        if (is_shop() || is_product_category() || is_product_tag() || is_product()) {
+            wp_enqueue_style('zcb-shop', ZCB_CSS_URI . '/custom/shop.css', ['wolmart-theme-child'], '1.0');
         }
         // Estilos para páginas de checkout, carrito y cuenta
         if (is_checkout() || is_cart() || is_account_page()){
