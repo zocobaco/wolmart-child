@@ -9,7 +9,7 @@ header .account i,header .cart-toggle i,header .compare-open i,header .contact i
 .aws-container .aws-search-form ,.account a,.cart-dropdown .cart-toggle {
     height: 36px;
     border: 1px solid;
-    border-color: var(--gray-60);
+    border-color: var(--wolmart-border-color);
     padding: 0 8px;
     justify-content: center;
     border-radius: 8px;
@@ -18,7 +18,7 @@ header .account i,header .cart-toggle i,header .compare-open i,header .contact i
 
 
 .aws-container .aws-search-form.aws-form-active:before {
-    border-bottom: 1px solid var(--gray-40);
+    border-bottom: 1px solid var(--wolmart-border-color);
     position: absolute;
     height: 1px;
     left: 0;
@@ -38,7 +38,7 @@ header .account i,header .cart-toggle i,header .compare-open i,header .contact i
 }
 
 .aws-container .aws-search-form .aws-search-btn_icon {
-    border-left: 1px solid var(--gray-60);
+    border-left: 1px solid var(--wolmart-border-color);
     color: var(--night-60);
     padding-left: 8px;
 }
@@ -53,7 +53,7 @@ header .account i,header .cart-toggle i,header .compare-open i,header .contact i
     height: 20px;
     width: 20px;
     color: var(--night-80);
-    background: var(--gray-60);
+    background: var(--wolmart-border-color);
 }
 .aws-search-result {
     box-shadow: var(--shadow-xl);
