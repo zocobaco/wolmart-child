@@ -11,13 +11,14 @@ add_action('wp_enqueue_scripts', function () {
         [],
         filemtime(ZCB_PATH . '/assets/css/base/variables.css')
     );
-    wp_enqueue_style(
-        'zcb-utilities',
-        ZCB_ASSETS_URI . '/css/base/utilities.css',
-        [],
-        filemtime(ZCB_PATH . '/assets/css/base/utilities.css')
-    );
 
+    // 2. Estilos del Tema Hijo (Solo metadatos)
+    wp_enqueue_style(
+        'wolmart-theme-child', 
+        get_stylesheet_directory_uri() . '/style.css', 
+        ['wolmart-theme', 'zcb-variables'], 
+        filemtime(get_stylesheet_directory() . '/style.css')
+    );
     // 3. Font Awesome
     wp_enqueue_style('zcb-fontawesome', ZCB_ASSETS_URI . '/fontawesone/css/all.min.css', [], '6.4.0');
 
