@@ -3,6 +3,11 @@
  * ZOCOBA - Header Custom CSS   
  * =========================================================================
 */
+/* ====== Espaciado entre Widgets del Header ====== */
+.custom-header .elementor-widget:not(:last-child)>.elementor-widget-container {
+    margin-right: 1rem;
+}
+/* ====== Íconos del Header ====== */
 header .account i,
 header .cart-toggle i,
 header .compare-open i,
@@ -12,8 +17,7 @@ header .wishlist i {
     margin-bottom: 0 !important;
     font-weight: 500;
 }
-        
-/* ====== Estilos Generales del Header ====== */
+/* Logo Header */   
 .header .logo img {
     width: 35px;
 }
@@ -22,73 +26,14 @@ header .wishlist i {
 .account a,
 .cart-dropdown .cart-toggle {
     height: 36px;
-    border: 1px solid var(--wolmart-border-color); /* Optimizado */
+    border: 1px solid var(--wolmart-border-color); 
     padding: 0 8px;
     justify-content: center;
-    border-radius: var(--radius-sm); /* Optimizado */
+    border-radius: var(--radius-sm); 
 }
-
-.z-box .menu-item a,
-.z-box .cat-type-simple {
-    display: inline-flex !important;
-    align-items: center;
-    width: 100%;
-    border-radius: var(--radius-sm); /* Optimizado */
-    padding: 4px !important;
-    margin-bottom: .15rem !important;
-    height: 35px !important;
-}
-
-.z-box .cat-type-simple:hover,
-.z-box .menu-item a:hover {
-    background-color: var(--gray-20); /* Optimizado */
-}
-
-.z-box .account-avatar {
-    width: 40px;
-    height: 40px;
-}
-.z-box .logout span {
-    font-size: 16px;
-    letter-spacing: -0.035em;
-    font-weight: 800;
-}
-
-/* Icons/Figures within Z-Box */
-.z-box figure,
-.z-box i {
-    width: 28px;
-    height: 28px;
-    padding: 0;
-    margin-right: 7px !important;
-}
-
-/* Category Content within Z-Box */
-.z-box .category-wrap {
-    margin-bottom: 0;
-}
-.z-box .category-content {
-    padding: 0;
-    display: block;
-    width: 100%;
-    text-align: left;
-}
-.z-box .woocommerce-loop-category__title {
-    margin-bottom: 0;
-    font-weight: 400;
-    text-transform: math-auto;
-}
-.z-box .woocommerce-loop-category__title a {
-    display: block;
-    width: 100%;
-}
-.z-box .category-content mark {
-    display: none;
-}
-
 /* ====== Búsqueda (AWS) - Escritorio ====== */
 .aws-container .aws-search-form.aws-form-active:before {
-    border-bottom: 1px solid var(--wolmart-border-color); /* Optimizado */
+    border-bottom: 1px solid var(--wolmart-border-color); 
     position: absolute;
     height: 1px;
     left: 0;
@@ -102,14 +47,14 @@ header .wishlist i {
 .aws-container .aws-search-form .aws-form-btn {
     border: 0;
     font-size: 14px;
-    caret-color: var(--brand-secondary); /* Optimizado (Color Zocoba) */
+    caret-color: var(--brand-secondary); 
     background: transparent !important;
-    color: var(--brand-primary); /* Optimizado */
+    color: var(--brand-primary); 
     letter-spacing: -0.020em;
 }
 
 .aws-container .aws-search-form .aws-search-btn_icon {
-    border-left: 1px solid var(--wolmart-border-color); /* Optimizado */
+    border-left: 1px solid var(--wolmart-border-color); 
     color: var(--night-60);
     padding-left: 8px;
 }
