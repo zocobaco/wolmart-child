@@ -1,11 +1,8 @@
 /*
  * =========================================================================
- * ZOCOBA - ESTILOS DEL HEADER (UNIFICADO)
- * Contiene los estilos de Escritorio y Móvil
+ * ZOCOBA - Header Custom CSS   
  * =========================================================================
- */
-
-/* ====== Estilos Base (Escritorio) ====== */
+*/
 header .account i,
 header .cart-toggle i,
 header .compare-open i,
@@ -15,6 +12,28 @@ header .wishlist i {
     margin-bottom: 0 !important;
     font-weight: 500;
 }
+        
+/* ====== Estilos Generales del Header ====== */
+.header .cont {
+    padding: 0 1rem;
+    background: var(--white);
+    height: 57px;
+    box-shadow: var(--shadow-sm);
+    z-index: 99;
+}
+.header .logo img {
+    width: 35px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .aws-container .aws-search-form,
 .account a,
