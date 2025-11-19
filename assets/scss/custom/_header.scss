@@ -1,150 +1,226 @@
 /*
  * ==================================================
- * HEADER - ESTILO MARKETPLACE PRO (Amazon/Rappi)
- * Concepto: Cuadrado, Eficiente, Búsqueda Central
+ * HEADER ZOCOBA - ESTILO MARKETPLACE (Cuadrado)
+ * Basado en tu código original, optimizado para SCSS.
  * ==================================================
 */
 
-/* 1. Estructura General del Header */
-.header {
-    background-color: var(--bg-white);
-    border-bottom: 1px solid var(--border-color);
-    padding: 0; /* Eliminamos paddings extraños */
-}
-
-.header-middle {
-    padding: 1rem 0; /* Espacio respirable pero eficiente */
-}
-
-/* 2. Buscador Central (El corazón del Marketplace) */
-/* Estilo Amazon: Borde fuerte, botón cuadrado destacado */
-.aws-container .aws-search-form {
-    border: 2px solid var(--brand-secondary); /* Borde Naranja sólido */
-    border-radius: var(--radius-xs); /* 0px - Cuadrado */
-    height: 42px; /* Más alto para facilitar clic */
-    overflow: visible; /* Permitir sombras */
-    background: var(--bg-white);
-    display: flex;
-    transition: box-shadow 0.2s ease;
-}
-
-/* Efecto al escribir (Focus) */
-.aws-container .aws-search-form.aws-form-active,
-.aws-container .aws-search-form:focus-within {
-    box-shadow: 0 0 0 2px rgba(232, 119, 46, 0.2); /* Resplandor naranja sutil */
-}
-
-/* Campo de texto */
-.aws-container .aws-search-field {
-    border: none;
-    background: transparent;
-    color: var(--text-main);
-    font-family: var(--font-body);
-    font-size: 1.4rem;
-    padding: 0 1rem;
-    height: 100%;
-}
-
-/* Botón de Buscar (La Lupa) */
-.aws-container .aws-search-form .aws-form-btn {
-    background-color: var(--brand-secondary); /* Fondo Naranja */
-    color: #fff; /* Icono Blanco */
-    border: none;
-    border-radius: 0; /* Cuadrado total */
-    width: 45px;
-    height: 100%;
-    font-size: 1.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.aws-container .aws-search-form .aws-form-btn:hover {
-    background-color: var(--brand-hover); /* Naranja oscuro al pasar mouse */
-}
-
-/* 3. Iconos de Usuario y Carrito (Derecha) */
-.header-right .icon-box {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-left: 1.5rem;
-    color: var(--text-main);
-    font-weight: 600;
-    font-size: 1.3rem;
-    transition: color 0.2s;
-}
-
-.header-right .icon-box:hover {
-    color: var(--brand-secondary);
-}
-
-.header-right i {
-    font-size: 2.4rem; /* Iconos grandes y legibles */
-    margin-bottom: 0;
-}
-
-.header-right span {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
-}
-
-.header-right small {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: var(--text-light);
-}
-
-/* Contador del Carrito (Badge) */
-.cart-dropdown .cart-count {
-    background-color: var(--brand-secondary);
-    color: #fff;
-    border-radius: 50%; /* El único elemento redondo (estándar de UI) */
-    font-size: 1rem;
-    font-weight: bold;
-    top: -5px;
-    right: -5px;
-}
-
-/* 4. Menú de Navegación (Debajo del Header) */
-.header-bottom {
-    background-color: var(--brand-primary); /* Fondo Negro (Estilo Amazon) */
-    color: #fff;
-    height: 40px;
-}
-
-.main-nav .menu > li > a {
-    color: #fff;
-    padding: 0.8rem 1.5rem;
+/* 1. Iconos del Header (Cuenta, Carrito, Wishlist) */
+header .account i,
+header .cart-toggle i,
+header .compare-open i,
+header .contact i,
+header .wishlist i {
+    font-size: 1.8rem; /* Un poco más grandes para impacto */
+    margin-bottom: 0 !important;
     font-weight: 500;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    letter-spacing: 0.02em;
+    color: var(--zcb-text); /* Gris oscuro */
 }
 
-.main-nav .menu > li:hover > a,
-.main-nav .menu > li.active > a {
-    background-color: rgba(255,255,255,0.1); /* Hover sutil */
+/* 2. Contenedores (Buscador, Cuenta, Carrito) */
+/* Aplicamos el estilo "Cuadrado" y bordes sutiles */
+.aws-container .aws-search-form,
+.account a,
+.cart-dropdown .cart-toggle {
+    height: 40px; /* Altura estándar cómoda */
+    border: 1px solid var(--zcb-border);
+    padding: 0 10px;
+    justify-content: center;
+    border-radius: var(--zcb-radius); /* ¡0px! Cuadrado perfecto */
+    background-color: var(--zcb-white);
+    transition: all 0.2s ease;
+}
+
+/* Efecto Hover en botones de cabecera */
+.account a:hover,
+.cart-dropdown .cart-toggle:hover {
+    border-color: var(--zcb-orange);
+    background-color: rgba(232, 119, 46, 0.05); /* Naranja muy suave */
+}
+
+/* 3. Menú de Usuario (.z-box) */
+.z-box .menu-item a,
+.z-box .cat-type-simple {
+    display: inline-flex !important;
+    align-items: center;
+    width: 100%;
+    border-radius: var(--zcb-radius); /* Cuadrado */
+    padding: 8px 10px !important; /* Más espacio para clic */
+    margin-bottom: 2px !important;
+    height: auto !important;
+}
+
+.z-box .cat-type-simple:hover,
+.z-box .menu-item a:hover {
+    background-color: var(--zcb-bg); /* Gris suave */
+    color: var(--zcb-black);
+}
+
+.z-box .account-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Avatares siempre redondos */
+}
+
+.z-box .logout span {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--zcb-orange);
+}
+
+/* Iconos dentro de Z-Box */
+.z-box figure,
+.z-box i {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin-right: 10px !important;
+    color: var(--zcb-text);
+}
+
+/* Contenido de Categoría Z-Box */
+.z-box .category-wrap { margin-bottom: 0; }
+.z-box .category-content {
+    padding: 0;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.z-box .woocommerce-loop-category__title {
+    margin-bottom: 0;
+    font-weight: 500;
+    text-transform: none;
+}
+.z-box .woocommerce-loop-category__title a {
+    display: block;
+    width: 100%;
+}
+.z-box .category-content mark { display: none; }
+
+/* 4. Buscador Avanzado (AWS) - Estilo Amazon */
+.aws-container .aws-search-form {
+    border: 2px solid var(--zcb-orange); /* Borde naranja fuerte */
+    overflow: visible;
+}
+
+.aws-container .aws-search-form .aws-search-field {
+    border: 0;
+    font-size: 15px;
+    caret-color: var(--zcb-orange);
+    background: transparent !important;
+    color: var(--zcb-black);
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Botón de búsqueda */
+.aws-container .aws-search-form .aws-form-btn {
+    background-color: var(--zcb-orange);
     color: #fff;
+    border: 0;
+    border-radius: 0; /* Cuadrado */
 }
 
-/* 5. Versión Móvil (Rappi Style) */
+/* Icono de búsqueda */
+.aws-container .aws-search-form .aws-search-btn_icon {
+    color: #fff; /* Icono blanco sobre naranja */
+    border-left: 0;
+}
+
+/* Resultados de Búsqueda (Dropdown) */
+.aws-search-result {
+    box-shadow: var(--zcb-shadow-hover);
+    border: 1px solid var(--zcb-border);
+    border-radius: var(--zcb-radius) !important; /* Cuadrado */
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.aws-search-result .aws_results .aws_result_item {
+    border-bottom: 1px solid var(--zcb-border);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.aws-search-result .aws_results .aws_result_item:hover {
+    background-color: var(--zcb-bg);
+}
+
+/* Imágenes en resultados */
+.aws-search-result .aws_result_image img {
+    width: 40px;
+    border: 1px solid var(--zcb-border);
+    border-radius: var(--zcb-radius); /* Cuadrado */
+    margin-top: 0;
+}
+
+/* Títulos en resultados */
+.aws-search-result .aws_result_title {
+    color: var(--zcb-black);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Precio y extracto */
+.aws-search-result .aws_result_excerpt {
+    color: var(--zcb-text);
+    font-size: 12px;
+}
+
+/* 5. Carrito (Dropdown) */
+.cart-dropdown .cart-toggle {
+    padding: 0.8rem 2.5rem 0.8rem 0.6rem;
+    border-color: transparent; /* Limpio por defecto */
+}
+.cart-dropdown .cart-toggle:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/* Badge del Carrito (Contador) */
+.cart-dropdown.badge-type .cart-count {
+    left: 30px;
+    top: 5px;
+    background: var(--zcb-orange);
+    color: #fff;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.7em;
+    border-radius: 50%; /* Redondo standard */
+    font-weight: 700;
+}
+
+/* 6. Header Fijo (Sticky) */
+.fixed.fix-top {
+    animation: fixedTop 0.3s;
+    z-index: 1000;
+    box-shadow: var(--zcb-shadow);
+    background-color: var(--zcb-white);
+}
+
+/* 7. Estilos Móviles (Responsive) */
 @media (max-width: 767px) {
-    .header-middle {
-        padding: 0.5rem 0;
-    }
-    
-    /* Buscador Móvil Fijo arriba */
+    /* Buscador fijo móvil estilo App */
     .aws-container.aws-mobile-fixed {
-        background: var(--bg-white);
-        border-bottom: 1px solid var(--border-color);
-        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid var(--zcb-border);
+        background: var(--zcb-white);
+        padding: 5px 10px;
     }
     
     .aws-mobile-fixed .aws-search-form {
         height: 40px;
-        border: 1px solid var(--border-color);
-        box-shadow: var(--shadow-card);
+        border: 1px solid var(--zcb-border);
+    }
+
+    /* Resultados móvil pantalla completa */
+    .aws-search-result.less500 {
+        width: 100% !important;
+        height: calc(100vh - 60px);
+        border: 0;
+        left: 0 !important;
+        right: 0;
+        box-shadow: none;
+        padding: 0;
     }
 }
