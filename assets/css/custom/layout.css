@@ -60,7 +60,7 @@ main, .wcfm-store-list-page #main, .wcfm-store-page #main {
 }
 .breadcrumb .delimiter, .breadcrumb .separator {
     margin: 0 1.5em;
-    font-size: 0.3em
+    font-size: 0.5em
 }
 
 /* WooCommerce Form Login */
@@ -75,7 +75,7 @@ main, .wcfm-store-list-page #main, .wcfm-store-page #main {
 .login-popup {
     max-width: calc(var(--container-xs) - 40px);
     padding: 1rem 2rem;
-    border-radius: var(--radius-sm); /* Ya usa tu token. ¡Bien! */
+    border-radius: var(--radius-sm);
 }
 .login-popup .nav-link {
     text-transform: capitalize;
