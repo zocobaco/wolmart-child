@@ -171,14 +171,9 @@ header .wishlist i {
 }
 
 /* ====== Account & Cart - Escritorio ====== */
-.account a {
-    width: 100%;
-    padding: 8px;
-}
-
 .account-avatar {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
 }
 
 .cart-dropdown .cart-toggle {
