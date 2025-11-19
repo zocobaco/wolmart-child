@@ -5,32 +5,28 @@
  * ==================================================
 */
 
-/* 1. Iconos del Header (Cuenta, Carrito, Wishlist) */
 header .account i,
 header .cart-toggle i,
 header .compare-open i,
 header .contact i,
 header .wishlist i {
-    font-size: 1.8rem; /* Un poco más grandes para impacto */
+    font-size: 1.8rem; 
     margin-bottom: 0 !important;
     font-weight: 500;
-    color: var(--zcb-text); /* Gris oscuro */
 }
-/* Logo Header */   
+ 
 .header .logo img {
     width: 35px;
 }
-/* 2. Contenedores (Buscador, Cuenta, Carrito) */
-/* Aplicamos el estilo "Cuadrado" y bordes sutiles */
+
 .aws-container .aws-search-form,
 .account a,
 .cart-dropdown .cart-toggle {
-    height: 40px; /* Altura estándar cómoda */
+    height: 40px; 
     border: 1px solid var(--zcb-border);
     padding: 0 10px;
     justify-content: center;
-    border-radius: var(--zcb-radius); /* ¡0px! Cuadrado perfecto */
-    background-color: var(--zcb-white);
+    background-color: var(--white);
     transition: all 0.2s ease;
 }
 
@@ -40,65 +36,6 @@ header .wishlist i {
     border-color: var(--zcb-orange);
     background-color: rgba(232, 119, 46, 0.05); /* Naranja muy suave */
 }
-
-/* 3. Menú de Usuario (.z-box) */
-.z-box .menu-item a,
-.z-box .cat-type-simple {
-    display: inline-flex !important;
-    align-items: center;
-    width: 100%;
-    border-radius: var(--zcb-radius); /* Cuadrado */
-    padding: 8px 10px !important; /* Más espacio para clic */
-    margin-bottom: 2px !important;
-    height: auto !important;
-}
-
-.z-box .cat-type-simple:hover,
-.z-box .menu-item a:hover {
-    background-color: var(--zcb-bg); /* Gris suave */
-    color: var(--zcb-black);
-}
-
-.z-box .account-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%; /* Avatares siempre redondos */
-}
-
-.z-box .logout span {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--zcb-orange);
-}
-
-/* Iconos dentro de Z-Box */
-.z-box figure,
-.z-box i {
-    width: 24px;
-    height: 24px;
-    padding: 0;
-    margin-right: 10px !important;
-    color: var(--zcb-text);
-}
-
-/* Contenido de Categoría Z-Box */
-.z-box .category-wrap { margin-bottom: 0; }
-.z-box .category-content {
-    padding: 0;
-    display: block;
-    width: 100%;
-    text-align: left;
-}
-.z-box .woocommerce-loop-category__title {
-    margin-bottom: 0;
-    font-weight: 500;
-    text-transform: none;
-}
-.z-box .woocommerce-loop-category__title a {
-    display: block;
-    width: 100%;
-}
-.z-box .category-content mark { display: none; }
 
 /* 4. Buscador Avanzado (AWS) - Estilo Amazon */
 .aws-container .aws-search-form {

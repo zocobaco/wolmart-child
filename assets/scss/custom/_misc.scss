@@ -19,7 +19,7 @@
 /* Colores de borde (Mapeados a variables Zocoba) */
 .bor-light   { border-color: var(--zcb-border) !important; }      /* Gris suave */
 .bor-dark    { border-color: var(--zcb-brand-black) !important; } /* Negro marca */
-.bor-white   { border-color: var(--zcb-white) !important; }       /* Blanco */
+.bor-white   { border-color: var(--white) !important; }       /* Blanco */
 .bor-primary { border-color: var(--zcb-brand-black) !important; } /* Negro */
 .bor-second  { border-color: var(--zcb-brand-orange) !important; }/* Naranja */
 
@@ -27,7 +27,7 @@
 /* * 2. UTILIDADES DE FONDOS (WASH)
  * ==============================
  */
-.wash-white { background-color: var(--zcb-white); }
+.wash-white { background-color: var(--white); }
 .wash-gray  { background-color: var(--zcb-bg-body); } /* Gris de fondo general */
 .wash-dark  { background-color: var(--zcb-brand-black); color: #fff; }
 
@@ -90,25 +90,6 @@
     color: #fff;
 }
 
-/* Iconos Circulares (Ej: Redes sociales o características) */
-.icon-circle {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%; /* Siempre redondos */
-    background-color: var(--zcb-bg-body);
-    color: var(--zcb-brand-black);
-}
-
-/* Títulos de WCFM (Dashboard Vendedor) */
-.wcfm_product_title,
-.wcfm_dashboard_item_title {
-    font-weight: 600;
-    color: var(--zcb-brand-orange);
-}
 
 /* Footer Text */
 .text-copyright, .text-footer {
