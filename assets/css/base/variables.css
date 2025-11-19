@@ -1,34 +1,23 @@
-/*
- * ARCHIVO: zocobaco/wolmart-child/assets/css/base/variables.css
- * (Versión optimizada y con nueva paleta de color)
-*/
 :root {
-
-/* ===================================================================
-   1. TOKENS DE DISEÑO PERSONALIZADOS (TU SISTEMA)
-   =================================================================== */
-  
-  /* Colores de Marca (¡NUEVA PALETA!) */
+  /* Colores de Marca*/
   --brand-primary: #1f1f21;     /* Negro Principal (Títulos, Textos) */
   --brand-secondary: #E8772E;  /* Naranja Terracota (Botones, Precios) */
   --brand-accent: #38A169;      /* Verde Sostenible (Sello ODS, Éxito) */
-
   /* Paleta de Negros (Night) */
   --night-40: #56565a;
   --night-60: #373739;
   --night-80: #1f1f21;
   --night-100: #000;
-  
-  /* Paleta de Naranjas (Aero) - Corregida */
-  --aero-wash: #fff3ed;
+  /* Paleta de Naranjas (Aero) */
+  --aero-wash:#fff3ed;
+  --aero-50:  #f39c5f; /* Tono medio del nuevo naranja */
   --aero-100: #E8772E; /* ¡Nuevo valor! */
   --aero-120: #dd6b20; /* Tono más oscuro del nuevo naranja */
-  
   /* Paleta de Verdes (Green) */
   --green-wash: #f0fff4;
-  --green-100: #38A169; /* ¡Nuevo valor! */
-  --green-120: #2f855a; /* Tono más oscuro del nuevo verde */
-  
+  --green-50:  #68d391; /* Tono medio del nuevo verde */
+  --green-100: #4c5e54; /* ¡Nuevo valor! */
+  -green-120:  #2f855a; /* Tono más oscuro del nuevo verde */
   /* Paleta de Grises */
   --wash: #fbfbfd;
   --white: #fff;
@@ -37,7 +26,23 @@
   --gray-40: #eaeaeb;
   --gray-60: #d5d5d7;
   --gray-80: #97979b;
-  --gray-100: #6e6e73;
+  --gray-100: #6e6e73;  
+  
+  /* Sombras (Tus sombras) */
+  --shadows-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadows-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadows-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadows-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadows-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Tamaños de Contenedor */
+  --container-xs: 400px;
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+  
 
   /* Tipografía (Tus fuentes) */
   --font-family-body: 'Be Vietnam Pro', sans-serif;
