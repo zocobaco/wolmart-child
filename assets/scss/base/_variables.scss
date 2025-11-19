@@ -1,0 +1,45 @@
+/*
+ * ==================================================
+ * ZOCOBA DESIGN SYSTEM - MARKETPLACE PRO
+ * Concepto: Cuadrado, Rápido, Alto Contraste.
+ * ==================================================
+*/
+:root {
+  /* --- 1. COLORES DE MARCA (Identidad Zocoba) --- */
+  --brand-primary: #1f1f21;     /* Negro Profundo (Texto, Títulos) */
+  --brand-secondary: #E8772E;  /* Naranja Acción (Botones, Precios) */
+  --brand-hover: #c85e1e;       /* Naranja oscuro para hover */
+  --brand-accent: #00a650;      /* Verde MercadoLibre (Éxito, Envío Gratis) */
+  
+  /* --- 2. COLORES DE INTERFAZ (Inspiración Amazon/Rappi) --- */
+  --bg-body: #f5f5f5;           /* Gris muy claro de fondo (descansa la vista) */
+  --bg-white: #ffffff;          /* Blanco puro para tarjetas */
+  --border-color: #e0e0e0;      /* Gris suave para bordes sutiles */
+  --text-main: #333333;         /* Gris casi negro para lectura */
+  --text-light: #666666;        /* Gris medio para detalles */
+  
+  /* --- 3. SISTEMA DE BORDES (La clave del diseño "Cuadrado") --- */
+  /* Eliminamos todas las curvas para un look industrial/logístico */
+  --radius-xs: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-circle: 50%; /* Solo para avatares de usuario */
+  
+  /* --- 4. SOMBRAS (Minimalistas) --- */
+  /* Sombras duras y sutiles para dar profundidad sin "suavidad" */
+  --shadow-card: 0 1px 2px 0 rgba(0,0,0,0.1);
+  --shadow-hover: 0 4px 12px 0 rgba(0,0,0,0.15);
+
+  /* --- 5. TIPOGRAFÍA --- */
+  --font-heading: 'Baloo 2', sans-serif; /* Tu marca */
+  --font-body: 'Be Vietnam Pro', sans-serif; /* Lectura */
+
+  /* --- 6. MAPEO AL TEMA PADRE (Sobrescribir Wolmart) --- */
+  /* Forzamos al tema a usar NUESTROS valores cuadrados */
+  --wolmart-border-radius: 0px;
+  --wolmart-border-radius-sm: 0px;
+  --wolmart-border-radius-lg: 0px;
+  --wolmart-primary-color: var(--brand-primary);
+  --wolmart-secondary-color: var(--brand-secondary);
+}

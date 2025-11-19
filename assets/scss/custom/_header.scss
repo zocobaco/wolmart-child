@@ -1,0 +1,150 @@
+/*
+ * ==================================================
+ * HEADER - ESTILO MARKETPLACE PRO (Amazon/Rappi)
+ * Concepto: Cuadrado, Eficiente, Búsqueda Central
+ * ==================================================
+*/
+
+/* 1. Estructura General del Header */
+.header {
+    background-color: var(--bg-white);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0; /* Eliminamos paddings extraños */
+}
+
+.header-middle {
+    padding: 1rem 0; /* Espacio respirable pero eficiente */
+}
+
+/* 2. Buscador Central (El corazón del Marketplace) */
+/* Estilo Amazon: Borde fuerte, botón cuadrado destacado */
+.aws-container .aws-search-form {
+    border: 2px solid var(--brand-secondary); /* Borde Naranja sólido */
+    border-radius: var(--radius-xs); /* 0px - Cuadrado */
+    height: 42px; /* Más alto para facilitar clic */
+    overflow: visible; /* Permitir sombras */
+    background: var(--bg-white);
+    display: flex;
+    transition: box-shadow 0.2s ease;
+}
+
+/* Efecto al escribir (Focus) */
+.aws-container .aws-search-form.aws-form-active,
+.aws-container .aws-search-form:focus-within {
+    box-shadow: 0 0 0 2px rgba(232, 119, 46, 0.2); /* Resplandor naranja sutil */
+}
+
+/* Campo de texto */
+.aws-container .aws-search-field {
+    border: none;
+    background: transparent;
+    color: var(--text-main);
+    font-family: var(--font-body);
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+/* Botón de Buscar (La Lupa) */
+.aws-container .aws-search-form .aws-form-btn {
+    background-color: var(--brand-secondary); /* Fondo Naranja */
+    color: #fff; /* Icono Blanco */
+    border: none;
+    border-radius: 0; /* Cuadrado total */
+    width: 45px;
+    height: 100%;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.aws-container .aws-search-form .aws-form-btn:hover {
+    background-color: var(--brand-hover); /* Naranja oscuro al pasar mouse */
+}
+
+/* 3. Iconos de Usuario y Carrito (Derecha) */
+.header-right .icon-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1.5rem;
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: color 0.2s;
+}
+
+.header-right .icon-box:hover {
+    color: var(--brand-secondary);
+}
+
+.header-right i {
+    font-size: 2.4rem; /* Iconos grandes y legibles */
+    margin-bottom: 0;
+}
+
+.header-right span {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.header-right small {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+/* Contador del Carrito (Badge) */
+.cart-dropdown .cart-count {
+    background-color: var(--brand-secondary);
+    color: #fff;
+    border-radius: 50%; /* El único elemento redondo (estándar de UI) */
+    font-size: 1rem;
+    font-weight: bold;
+    top: -5px;
+    right: -5px;
+}
+
+/* 4. Menú de Navegación (Debajo del Header) */
+.header-bottom {
+    background-color: var(--brand-primary); /* Fondo Negro (Estilo Amazon) */
+    color: #fff;
+    height: 40px;
+}
+
+.main-nav .menu > li > a {
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 0.02em;
+}
+
+.main-nav .menu > li:hover > a,
+.main-nav .menu > li.active > a {
+    background-color: rgba(255,255,255,0.1); /* Hover sutil */
+    color: #fff;
+}
+
+/* 5. Versión Móvil (Rappi Style) */
+@media (max-width: 767px) {
+    .header-middle {
+        padding: 0.5rem 0;
+    }
+    
+    /* Buscador Móvil Fijo arriba */
+    .aws-container.aws-mobile-fixed {
+        background: var(--bg-white);
+        border-bottom: 1px solid var(--border-color);
+        padding: 0.5rem;
+    }
+    
+    .aws-mobile-fixed .aws-search-form {
+        height: 40px;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-card);
+    }
+}
