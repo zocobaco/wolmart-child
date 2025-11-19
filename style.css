@@ -7,25 +7,4 @@ Template: wolmart
 Version: 2.0
 ***/
 
-/*
- * =========================================================================
- * ZOCOBA - ESTILOS GLOBALES
- * Este archivo importa todos los módulos globales.
- * =========================================================================
- */
 
-/*
- * =========================================================================
- * ZOCOBA - ESTILOS GLOBALES
- * Este archivo importa todos los módulos globales.
- * =========================================================================
- */
-
-// 1. Base (Variables y Tokens)
-@import 'base/variables';
-
-// 2. Módulos Globales (Layout, Header, etc.)
-@import 'custom/layout';
-@import 'custom/header';
-@import 'custom/sidebar';
-@import 'custom/misc';

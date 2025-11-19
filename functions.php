@@ -8,10 +8,9 @@ defined('ABSPATH') || exit;
 
 // Cargar archivos separados con nombres semánticos
 $includes = [
-    'inc/config.php',             // Configuración base y constantes (antes zcb_core.php)
-    'inc/assets.php',             // Manejador de carga de CSS/JS (antes zcb_assets.php)
-    'inc/woo-hooks.php',  // ¡NUEVO! Personalizaciones de Hooks
-    // 'inc/dokan_hooks.php',     // (Si tienes este archivo, puedes mover su contenido a woocommerce-hooks.php y borrarlo)
+    'inc/config.php',             // Configuración base y constantes
+    'inc/assets.php',             // Manejador de carga de CSS/JS
+    'inc/woo-hooks.php',          // ¡NUEVO! Personalizaciones de Hooks
 ];
 
 foreach ($includes as $file) {
