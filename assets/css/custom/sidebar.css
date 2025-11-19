@@ -1,21 +1,13 @@
-/*
- * ARCHIVO: assets/css/custom/sidebar.css (Optimizado)
- */
-
 .sidebar-fixed.left-sidebar {
     padding: 0 1.5rem;
     max-width: 26rem;
     width: 26rem;
 }
-#wcfmmp-store .sidebar-fixed.left-sidebar { 
-    padding-left: 0;
+.sidebar-fixed.right-sidebar {
+    padding: 0 1.5rem;
     max-width: 26rem;
+    width: 26rem;
 }
-.sidebar .widget,
-#wcfmmp-store .sidebar .widget  {
-    /* margin-bottom: 1rem; */
-}
-
 .sidebar.shop-sidebar .filter-actions label,
 .sidebar-content:not(.toolbox-left) .widget-title, 
 .sidebar:not(.shop-sidebar) .widget .widget-title {
@@ -41,7 +33,6 @@
     max-height: 205px;
     overflow: hidden auto;
 }
-
 .single-product .widget-collapsible:not(.widget-block)>ul { 
     max-height: 180px;
 }
@@ -75,7 +66,7 @@
 }
 
 .sidebar .wolmart-price-range input {
-    border-radius: var(--radius-sm); /* MEJORA: Token de radio */
+    border-radius: var(--radius-sm);
     height: 36px;
 }
 
