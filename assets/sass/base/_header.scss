@@ -1,0 +1,282 @@
+/* -------------------------------------------
+	1.Header
+	2. Logo
+    3. Search Bar
+    4. User Profile
+    5. Cart 
+---------------------------------------------- */
+/* 1. header */
+.fixed.fix-top {
+    -webkit-animation: fixedTop 0.1s;
+    animation: fixedTop 0.1s;
+    z-index: 10;
+}
+.custom-header .elementor-widget:not(:last-child)>.elementor-widget-container {
+    margin-right: 1rem;
+}
+
+header .account i,
+header .cart-toggle i,
+header .compare-open i,
+header .contact i,
+header .wishlist i {
+    font-size: 1.6rem;
+    margin-bottom: 0 !important;
+    font-weight: 500;
+}
+
+.aws-container .aws-search-form,
+.account a,
+.cart-dropdown .cart-toggle {
+    height: 36px;
+    border: 1px solid var(--wolmart-border-color); 
+    padding: 0 8px;
+    justify-content: center;
+    border-radius: var(--radius-sm); 
+}
+/* 2. Logo */   
+.header .logo img {
+    width: 35px;
+}
+
+/* 3. Search */
+.aws-container .aws-search-form.aws-form-active:before {
+    border-bottom: 1px solid var(--wolmart-border-color); 
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    z-index: 10;
+    margin: 0 8px 0 16px;
+}
+
+.aws-container .aws-search-form .aws-search-field,
+.aws-container .aws-search-form .aws-form-btn {
+    border: 0;
+    font-size: 14px;
+    caret-color: var(--brand-secondary); 
+    background: transparent !important;
+    color: var(--brand-primary); 
+    letter-spacing: -0.020em;
+}
+
+.aws-container .aws-search-form .aws-search-btn_icon {
+    border-left: 1px solid var(--wolmart-border-color); 
+    color: var(--night-60);
+    padding-left: 8px;
+}
+.aws-container .aws-search-form .aws-search-clear {
+    background: var(--white);
+}
+.aws-container .aws-search-form .aws-search-clear span {
+    line-height: 18px;
+    margin-top: -10px;
+    border-radius: 60px !important;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    color: var(--brand-primary);
+    background: var(--gray-40);
+}
+
+.aws-search-result {
+    box-shadow: var(--shadows-xl);
+    border: 1px solid var(--wolmart-border-color); /* Optimizado */
+    border-radius: var(--radius-sm) !important;
+    margin-top: 0.25rem;
+    overflow: hidden;
+}
+
+.aws-search-result.aws_no_result .aws_results .aws_result_item,
+.aws-search-result .aws_results .aws_result_item {
+    border-color: var(--wolmart-border-color); /* Optimizado */
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.aws-search-result.aws_no_result .aws_results .aws_result_item {
+    padding: 16px;
+}
+
+.aws-search-result .aws_result_link {
+    display: flex;
+    padding: 8px 8px;
+    align-items: center;
+}
+.aws-search-result .aws_result_user .aws_result_head img,
+.aws-search-result .aws_result_image img {
+    width: 28px;
+    border: 1px solid var(--wolmart-border-color);
+    margin-top: 0;
+}
+
+.aws-search-result .aws_result_content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1;
+}
+
+.aws-search-result .aws_result_head {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    align-items: center;
+    width: 85%;
+}
+
+.aws-search-result .aws_result_title {
+    overflow: hidden;
+    color: var(--wolmart-dark-color, #333);
+    font-family: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 320px;
+}
+
+.aws-search-result .aws_result_excerpt,
+.aws-search-result .aws_result_term {
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    letter-spacing: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 1.1rem;
+    color: var(--gray-80); /* Optimizado */
+    font-size: 12px;
+    padding-top: 0;
+    z-index: 1000;
+}
+
+.woocommerce.aws-wishlist {
+    margin-left: 2px;
+    width: 30px;
+    text-align: center;
+}
+
+.aws-search-result .aws_result_excerpt > a {
+    margin-top: 0;
+    font-weight: 500;
+    color: var(--night-60);
+    font-size: 10px;
+}
+
+.aws_result_excerpt a img {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: none;
+}
+
+/* 4. User Profile */
+.account-avatar {
+    width: 24px;
+    height: 24px;
+}
+
+/* 5. Cart */
+.cart-dropdown .cart-toggle {
+    padding: 0.8rem 2.5rem 0.8rem .6rem;
+}
+.cart-dropdown.badge-type .cart-count {
+    left: 33px;
+    top: 8px;
+    background: var(--brand-secondary); 
+    width: 1.5em;
+    height: 1.5em;
+}
+
+@media (max-width: 767px) {
+    .cookies-popup {
+        padding: 1rem;
+        border-radius: 10px;
+        transition: transform 0.3s;
+        z-index: 99999;
+    }
+    /* ====== Búsqueda Móvil (AWS) ====== */
+    .aws-overlay-mask,
+    .aws-container.aws-mobile-fixed {
+        top: 0 !important;
+        left: 0 !important;
+        right: 0;
+        height: 50px;
+        bottom: inherit;
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+    }
+    .aws-container.aws-mobile-fixed:before {
+        width: 100%;
+        height: 100%;
+        background: var(--white);
+        content: "";
+        position: fixed;
+        bottom: 0;
+        z-index: -1;
+    }
+    .aws-mobile-fixed-close {
+        margin-right: 0;
+    }
+    .aws-mobile-fixed-close svg {
+        background: var(--brand-primary);
+        fill: var(--white) !important;
+        padding: 0.35em;
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        z-index: 1055;
+    }
+    .aws-container .aws-show-clear .aws-search-field {
+        padding-right: 5px;
+    }
+    .aws-mobile-fixed .aws-search-form {
+        width: 100%;
+        max-width: 100%;
+        border: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--wolmart-border-color); 
+        border-radius: 0;
+        margin-right: 15px;
+    }
+    .aws-search-result,
+    .aws-search-form.aws-form-active {
+        box-shadow: none !important;
+        background: var(--white);
+    }
+    .aws-search-result .aws_result_scroll {
+        max-height: calc(90vh - 50px) !important;
+    }
+    .aws-container.aws-mobile-fixed {
+       border-bottom: 1px solid var(--wolmart-border-color); 
+    }
+    .aws-search-result.less500 {
+       width: 100% !important;
+       height: 100%;
+       border: 0;
+       left: 0 !important;
+       right: 0;
+       box-shadow: none;
+       padding: 0 1rem;
+    }
+    /* Ajustes de layout para header fijo en móvil */
+    .single-product .page-wrapper {
+        margin-top: 55px;
+    }
+    .single-product #main {
+        padding-top: 10px !important;
+        padding-bottom: 120px !important; 
+    }
+    .toolbox.sticky-content.fix-top {
+        top: 50px;
+    }
+}
