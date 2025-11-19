@@ -73,9 +73,9 @@ header .wishlist i {
 }
 
 .aws-search-result {
-    box-shadow: var(--shadow-xl);
+    box-shadow: var(--shadows-xl);
     border: 1px solid var(--wolmart-border-color); /* Optimizado */
-    border-radius: 0 !important;
+    border-radius: var(--radius-sm) !important;
     margin-top: 0.25rem;
     overflow: hidden;
 }
@@ -103,7 +103,7 @@ header .wishlist i {
 .aws-search-result .aws_result_user .aws_result_head img,
 .aws-search-result .aws_result_image img {
     width: 28px;
-    border: 1px solid;
+    border: 1px solid var(--wolmart-border-color);
     margin-top: 0;
 }
 
