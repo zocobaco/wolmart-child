@@ -1,13 +1,17 @@
 /** HEADER ZOCOBA - ESTILO MARKETPLACE */
-header .account i,
-header .cart-toggle i,
-header .compare-open i,
-header .contact i,
-header .wishlist i {
-    font-size: 1.8rem; 
-    margin-bottom: 0 !important;
-    font-weight: 500;
+header {
+    .account i,
+    .cart-toggle i,
+    .compare-open i,
+    .contact i,
+    .wishlist i {
+        font-size: 1.8rem; 
+        margin-bottom: 0 !important;
+        font-weight: 500;
+    }
 }
+    
+
  
 .header .logo img {
     width: 35px;
