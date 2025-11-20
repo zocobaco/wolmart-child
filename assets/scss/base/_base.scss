@@ -4,12 +4,12 @@
 	.vendor-widget:not(.vendor-widget-3) .vendor-banner,
 	.vendor-widget-2,
 	.vendor-widget-3 {
-		border-radius: 8px;
+		border-radius: 10px;
 		overflow: hidden;
 	}
 
 	.vendor-widget .product-media img {
-		border-radius: 8px;
+		border-radius: 10px;
 	}
 
 	.banner {
@@ -27,7 +27,8 @@
 	.wolmart-banner-container,
 	// wpbakery banner widget
 	.products .banner {
-		border-radius: 8px;
+		border-radius: 10px;
+
 	}
 
 	.form-control,
@@ -42,12 +43,13 @@
 	.post-calendar,
 	.instagram img,
 	.instagram figure:before,
-	.product-cart-bottom .btn-product
+	.product-cart-bottom,
+	.product-cart-bottom .btn-product,
 	.product .countdown-container,
 	.product-hide-details .btn-product,
 	.product-list .btn-product,
 	.wolmart-compare-table .compare-value .label-swatch {
-		border-radius: 8px;
+		border-radius: 10px;
 	}
 	
 }
