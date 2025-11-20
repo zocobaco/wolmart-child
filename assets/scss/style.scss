@@ -1,11 +1,11 @@
 
 /* 1. Zocoba SCSS Framework */
 @import 'config';
-@import 'misc';
+@import 'base/variables';
 /* 2. base */
 @import 'base/base';
-@import 'base/variables';
 
 // 3. Custom
-@import 'base/header/header';
+@import 'base/header';
+@import 'misc';
 
