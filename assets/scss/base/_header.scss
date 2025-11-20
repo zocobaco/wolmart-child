@@ -31,28 +31,19 @@ header .wishlist i {
 }
 
 /* 4. Buscador Avanzado (AWS) - Estilo Amazon */
-.aws-container .aws-search-form .aws-search-field {
-    border: 0;
-    font-size: 15px;
-    caret-color: var(--zcb-brand-orange);
-    background: transparent !important;
-    color: var(--zcb-black);
-    font-family: 'Be Vietnam Pro', sans-serif;
-}
-
-/* Botón de búsqueda */
-.aws-container .aws-search-form .aws-search-field, .aws-container .aws-search-form .aws-form-btn {
+.aws-container .aws-search-form .aws-search-field,
+.aws-container .aws-search-form .aws-form-btn {
     border: 0;
     font-size: 14px;
-    caret-color: var(--aero-100);
+    caret-color: var(--zcb-brand-orange);
     background: transparent !important;
-    color: var(--night-80);
+    color: var(--zcb-brand-black);
+    font-family: 'Be Vietnam Pro', sans-serif;
     letter-spacing: -0.020em;
 }
 
 .aws-container .aws-search-form .aws-search-btn_icon {
-    border-left: 1px solid var(--gray-60);
-    color: var(--night-60);
+    border-left: 1px solid var(--zcb-border);
     padding-left: 8px;
 }
 
