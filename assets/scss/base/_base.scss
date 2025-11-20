@@ -1,97 +1,15 @@
-/* -------------------------------------------
-		Typography
----------------------------------------------- */
-
-body {
-	font-family: var(--wolmart-body-font-family), sans-serif;
-	font-weight: var(--wolmart-body-font-weight);
-	font-size: var(--wolmart-body-font-size);
-	line-height: var(--wolmart-body-line-height);
-	letter-spacing: var(--wolmart-body-letter-spacing);
-	text-transform: var(--wolmart-body-text-transform);
-	color: var(--wolmart-body-color);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0 0 2rem;
-	font-family: var(--wolmart-heading-font-family), var(--wolmart-body-font-family), sans-serif;
-	font-weight: var(--wolmart-heading-font-weight, 600);
-	font-size: var(--wolmart-heading-font-size);
-	line-height: var(--wolmart-heading-line-height, var(--wolmart-body-line-height));
-	letter-spacing: var(--wolmart-heading-letter-spacing, var(--wolmart-body-letter-spacing));
-	text-transform: var(--wolmart-heading-text-transform, var(--wolmart-body-text-transform));
-	color: var(--wolmart-heading-color, var(--wolmart-body-color));
-}
-
-p {
-	margin: 0 0 2rem;
-}
-
-h1 {
-	font-size: 4.8rem;
-}
-
-h2 {
-	font-size: 3rem;
-}
-
-h3 {
-	font-size: 2.4rem;
-}
-
-h4 {
-	font-size: 2rem;
-}
-
-h5 {
-	font-size: 1.6rem;
-}
-
-h6 {
-	font-size: 1.4rem;
-}
-
-.list-type-check {
-	list-style: none;
-	padding-#{$left}: 0;
-
-	li {
-		position: relative;
-		padding-#{$left}: 2rem;
-
-		&::before {
-			position: absolute;
-			display: block;
-			#{$left}: 0;
-			top: 1px;
-			content: '\e969';
-			font-family: 'wolmart';
-			font-weight: 700;
-		}
-	}
-}
-
-figure video {
-	max-width: 100%;
-}
-
 .wolmart-rounded-skin {
 
 	.vendor-widget:not(.vendor-widget-3) .vendor-logo,
 	.vendor-widget:not(.vendor-widget-3) .vendor-banner,
 	.vendor-widget-2,
 	.vendor-widget-3 {
-		border-radius: 5px;
+		border-radius: 8px;
 		overflow: hidden;
 	}
 
 	.vendor-widget .product-media img {
-		border-radius: 3px;
+		border-radius: 8px;
 	}
 
 	.banner {
@@ -109,7 +27,7 @@ figure video {
 	.wolmart-banner-container,
 	// wpbakery banner widget
 	.products .banner {
-		border-radius: 5px;
+		border-radius: 8px;
 	}
 
 	.form-control,
@@ -128,18 +46,11 @@ figure video {
 	.product-hide-details .btn-product,
 	.product-list .btn-product,
 	.wolmart-compare-table .compare-value .label-swatch {
-		border-radius: 3px;
+		border-radius: 8px;
 	}
+	.btn-product,
+	.wolmart-rounded-skin > div{
+    border-radius: 8px;
 }
-
-.sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	white-space: nowrap;
-	border-width: 0;
+	
 }

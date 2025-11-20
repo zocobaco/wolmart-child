@@ -12,11 +12,11 @@ define( 'ZCB_PATH', get_stylesheet_directory() );
 define( 'ZCB_URI',  get_stylesheet_directory_uri() );
 
 // 2. Autocarga de Clases (Manual simplificado para Child Themes)
-require_once ZCB_PATH . '/inc/core/class-setup.php';
-require_once ZCB_PATH . '/inc/core/class-assets.php';
+require_once ZCB_PATH . '/inc/class-setup.php';
+require_once ZCB_PATH . '/inc/class-assets.php';
 // require_once ZCB_PATH . '/inc/Dokan/class-vendor.php'; // Descomentar cuando añadas lógica Dokan
 
 // 3. Inicializar el Tema
 // Instanciamos las clases para que sus hooks se activen.
-new \Zocoba\core\Setup();
-new \Zocoba\core\Assets();
+new \Zocoba\Setup();
+new \Zocoba\Assets();
