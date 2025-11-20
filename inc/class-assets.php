@@ -1,5 +1,5 @@
 <?php
-namespace Zocoba\core;
+namespace Zocoba\inc;
 
 defined( 'ABSPATH' ) || exit;
 
