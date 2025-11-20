@@ -18,5 +18,5 @@ require_once ZCB_PATH . '/inc/class-assets.php';
 
 // 3. Inicializar el Tema
 // Instanciamos las clases para que sus hooks se activen.
-new \Zocoba\Setup();
-new \Zocoba\Assets();
+new \Zocoba\inc\Setup();
+new \Zocoba\inc\Assets();
