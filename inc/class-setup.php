@@ -1,4 +1,6 @@
 <?php
+namespace Zocoba\inc;
+
 defined( 'ABSPATH' ) || exit;
 
 class Setup {
