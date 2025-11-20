@@ -1,5 +1,8 @@
 /** HEADER ZOCOBA - ESTILO MARKETPLACE */
 header {
+    .logo img {
+    width: 35px;
+    }
     .account i,
     .cart-toggle i,
     .compare-open i,
@@ -9,23 +12,23 @@ header {
         margin-bottom: 0 !important;
         font-weight: 500;
     }
+    .aws-container .aws-search-form,
+    .account a,
+    .cart-dropdown .cart-toggle {
+        height: 40px; 
+        border: 1px solid var(--zcb-border);
+        padding: 0 10px;
+        justify-content: center;
+        background-color: $light-grey;
+        transition: all 0.2s ease;
+    }
 }
+
     
 
  
-.header .logo img {
-    width: 35px;
-}
-.aws-container .aws-search-form,
-.account a,
-.cart-dropdown .cart-toggle {
-    height: 40px; 
-    border: 1px solid var(--zcb-border);
-    padding: 0 10px;
-    justify-content: center;
-    background-color: var(--white);
-    transition: all 0.2s ease;
-}
+
+
 
 /* Efecto Hover en botones de cabecera */
 .account a:hover,
