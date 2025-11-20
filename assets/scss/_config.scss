@@ -1,58 +1,69 @@
 /* -------------------------------------------
-	Wolmart Config Variables
+    Wolmart Config Variables (Zocoba Override)
 ------------------------------------------- */
 
 $is_not_optimize: true !default;
 
-// 1. Colors
-$primary-color: #2879FE !default;
-$secondary-color: #f93 !default;
-$body-color: #666 !default;
-$dark-color: #333 !default;
-$light-color: #ccc !default;
+// 1. Colors - REBRANDING ZOCOBA
+// ============================================
+// $primary-color: Color de acción principal (Botones, Enlaces, Hover) -> TU NARANJA
+$primary-color:      #E8772E !default; 
 
+// $secondary-color: Color de contraste/etiquetas -> TU NEGRO
+$secondary-color:    #1f1f21 !default; 
 
-$success-color: #799b5a !default;
-$success-color-light: #c4df9b !default;
-$info-color: #369 !default;
-$info-color-light: #d7e8f8 !default;
-$warning-color: #ffa800 !default;
-$warning-color-light: #fff1d7 !default;
-$danger-color: #a94442 !default;
-$danger-color-light: #f7e5e5 !default;
-$grey-color: #999 !default;
-$light-grey: #f1f1f1 !default;
-$border-color: #e5e5e5 !default;
-$border-color-light: #eee !default;
+// Textos
+$body-color:         #56565a !default; // Gris oscuro para lectura cómoda
+$dark-color:         #1f1f21 !default; // Títulos en Negro Zocoba
+$light-color:        #f5f5f5 !default; // Fondos claros (Gris Amazon)
+
+// Colores de Estado (Mejorados para UI tipo MercadoLibre)
+$success-color:       #00a650 !default; // Verde ML
+$success-color-light: #e6f7ee !default;
+$info-color:          #3483fa !default; // Azul Info
+$info-color-light:    #d7e8f8 !default;
+$warning-color:       #ffb600 !default; // Amarillo Alerta
+$warning-color-light: #fff8e1 !default;
+$danger-color:        #ff3b30 !default; // Rojo Error
+$danger-color-light:  #fff4f3 !default;
+
+// Bordes y Grises
+$grey-color:         #999999 !default;
+$light-grey:         #f5f5f5 !default;
+$border-color:       #e0e0e0 !default; // Borde sutil
+$border-color-light: #eeeeee !default;
 
 // 2. Font-families
-$font-family: Poppins, sans-serif !default;
+// Actualizado a tu fuente corporativa
+$font-family: 'Be Vietnam Pro', Poppins, sans-serif !default;
 
 // 3. Font-sizes
 $body-size: 14;
 
-// 4. Breakpoints
+// 4. Breakpoints (No tocar para mantener compatibilidad con Wolmart)
 $breakpoints: (xs: 480px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1600px, xlst: 1920px);
 $max-breakpoints: (xs: 479px, sm: 575px, md: 767px, lg: 991px, xl: 1199px, xxl: 1599px);
 
 // 5. Color of Social Icons
-$social-facebook: #1b4f9b;
-$social-twitter: #00adef;
-$social-linkedin: #0073b2;
-$social-email: #dd4b39;
-$social-youtube: #2c567e;
-$social-google: #dd4b39;
+// (Mantenemos los originales de las redes, o puedes cambiarlos a tu naranja si prefieres un look monocromático)
+$social-facebook:  #1b4f9b;
+$social-twitter:   #00adef;
+$social-linkedin:  #0073b2;
+$social-email:     #E8772E; // Usamos tu naranja para email
+$social-youtube:   #2c567e;
+$social-google:    #dd4b39;
 $social-pinterest: #f96a02;
-$social-reddit: #ff4107;
-$social-tumblr: #304e6c;
-$social-vk: #6383a8;
-$social-whatsapp: #3c8a38;
-$social-xing: #1a7576;
-$social-instagram: #cc0001;
-$social-youtube: #2c567e;
+$social-reddit:    #ff4107;
+$social-tumblr:    #304e6c;
+$social-vk:        #6383a8;
+$social-whatsapp:  #25D366; // Verde oficial WhatsApp
+$social-xing:      #1a7576;
+$social-instagram: #C13584; // Gradiente oficial aprox
+$social-youtube:   #FF0000; // Rojo oficial YouTube
 
-// 5. Corners
-$corner-normal: 3px;
+// 5. Corners (Bordes)
+// IMPORTANTE: Cambiado a 0px para el diseño "Cuadrado/Industrial"
+$corner-normal: 0px;
 
 // 6. Direction
 $dir: ltr !default;
