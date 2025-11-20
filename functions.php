@@ -1,25 +1,24 @@
 <?php
 /**
- * Theme Functions
- * @package ZOCOBA WordPress Framework
- * @since 1.0
+ * Zocoba Market - Theme Functions
+ * Arquitectura Modular Orientada a Objetos.
+ * * @package Wolmart Child
  */
-defined('ABSPATH') || exit;
+defined( 'ABSPATH' ) || exit; // Seguridad: Evita acceso directo
 
-// Definir constantes de ruta para uso global
-define('ZCB_PATH', get_stylesheet_directory());
-define('ZCB_URI', get_stylesheet_directory_uri());
+// 1. Definir Constantes Globales
+define( 'ZCB_VERSION', '2.1.0' );
+define( 'ZCB_PATH', get_stylesheet_directory() );
+define( 'ZCB_URI',  get_stylesheet_directory_uri() );
 
-// Archivos a cargar (Orden estricto)
-$includes = [
-    'inc/config.php',      // Ajustes de WordPress y constantes
-    'inc/assets.php',      // Carga de CSS y JS
-    'inc/woo-hooks.php',   // Modificaciones de estructura (HTML)
-];
+// 2. Autocarga de Clases (Manual simplificado para Child Themes)
+require_once ZCB_PATH . '/inc/core/class-setup.php';
+require_once ZCB_PATH . '/inc/core/class-assets.php';
+require_once ZCB_PATH . '/inc/woocommerce/class-product-single.php';
+// require_once ZCB_PATH . '/inc/Dokan/class-vendor.php'; // Descomentar cuando añadas lógica Dokan
 
-foreach ($includes as $file) {
-    $filepath = ZCB_PATH . '/' . $file;
-    if (file_exists($filepath)) {
-        require_once $filepath;
-    }
-}
+// 3. Inicializar el Tema
+// Instanciamos las clases para que sus hooks se activen.
+new \Zocoba\core\Setup();
+new \Zocoba\core\Assets();
+new \Zocoba\woocommerce\Product_Single();
