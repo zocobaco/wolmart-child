@@ -12,7 +12,6 @@ header .wishlist i {
 .header .logo img {
     width: 35px;
 }
-
 .aws-container .aws-search-form,
 .account a,
 .cart-dropdown .cart-toggle {
@@ -27,38 +26,36 @@ header .wishlist i {
 /* Efecto Hover en botones de cabecera */
 .account a:hover,
 .cart-dropdown .cart-toggle:hover {
-    border-color: var(--zcb-orange);
+    border-color: var(--zcb-brand-orange);
     background-color: rgba(232, 119, 46, 0.05); /* Naranja muy suave */
 }
 
 /* 4. Buscador Avanzado (AWS) - Estilo Amazon */
-.aws-container .aws-search-form {
-    border: 2px solid var(--zcb-orange); /* Borde naranja fuerte */
-    overflow: visible;
-}
-
 .aws-container .aws-search-form .aws-search-field {
     border: 0;
     font-size: 15px;
-    caret-color: var(--zcb-orange);
+    caret-color: var(--zcb-brand-orange);
     background: transparent !important;
     color: var(--zcb-black);
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 /* Botón de búsqueda */
-.aws-container .aws-search-form .aws-form-btn {
-    background-color: var(--zcb-orange);
-    color: #fff;
+.aws-container .aws-search-form .aws-search-field, .aws-container .aws-search-form .aws-form-btn {
     border: 0;
-    border-radius: 0; /* Cuadrado */
+    font-size: 14px;
+    caret-color: var(--aero-100);
+    background: transparent !important;
+    color: var(--night-80);
+    letter-spacing: -0.020em;
 }
 
-/* Icono de búsqueda */
 .aws-container .aws-search-form .aws-search-btn_icon {
-    color: #fff; /* Icono blanco sobre naranja */
-    border-left: 0;
+    border-left: 1px solid var(--gray-60);
+    color: var(--night-60);
+    padding-left: 8px;
 }
+
 
 /* Resultados de Búsqueda (Dropdown) */
 .aws-search-result {
@@ -114,7 +111,7 @@ header .wishlist i {
 .cart-dropdown.badge-type .cart-count {
     left: 30px;
     top: 5px;
-    background: var(--zcb-orange);
+    background: var(--zcb-brand-orange);
     color: #fff;
     width: 1.8em;
     height: 1.8em;
