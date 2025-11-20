@@ -56,11 +56,6 @@
 
 
 /* Sidebar */
-.sidebar-fixed.left-sidebar {
-	padding: 0 1.5rem;
-	max-width: 26rem;
-	width: 26rem;
-}
 .sidebar.shop-sidebar .filter-actions label,
 .sidebar-content:not(.toolbox-left) .widget-title, 
 .sidebar:not(.shop-sidebar) .widget .widget-title {
@@ -101,7 +96,6 @@
     margin: 0;
     position: relative
 }
-
 .sidebar .sidebar-content .widget li>a {
     width: 100%;
     padding-top: .3rem;
@@ -119,12 +113,10 @@
     align-items: center;
     gap: .5rem
 }
-
 .sidebar .wolmart-price-range input {
     border-radius: 8px;
     height: 36px
 }
-
 .sidebar .wolmart-price-range button {
     margin: 5px 0;
     width: 100%;
