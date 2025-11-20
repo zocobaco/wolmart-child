@@ -1,16 +1,12 @@
 /*
  * =========================================================================
- * ZOCOBA - UTILIDADES Y ESTILOS MISCELÁNEOS
- * Herramientas globales para bordes, fondos y textos usando el sistema Zocoba.
+ * ZOCOBA - UTILIDADES Y ESTILOS GLOBALES
+ * Herramientas bordes, fondos y textos usando el sistema Zocoba.
  * =========================================================================
  */
 
-/* * 1. UTILIDADES DE BORDES
- * =======================
- */
-.bor { 
-    border: 1px solid var(--zcb-border);
-}
+/** 1. UTILIDADES DE BORDES**/
+.bor {   border: 1px solid var(--zcb-border);}
 .bor-t { border-width: 1px 0 0 0 !important; }
 .bor-l { border-width: 0 1px 0 0 !important; }
 .bor-r { border-width: 0 0 0 1px !important; }

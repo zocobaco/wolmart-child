@@ -1,107 +1,78 @@
-/*
- * ==================================================
- * ZOCOBA DESIGN SYSTEM - PRO MARKETPLACE
- * Concepto: Industrial, Cuadrado, Alto Contraste
- * ==================================================
-*/
+/* * ZOCOBA DESIGN SYSTEM | MARKETPLACE PRO
+ * Estilo: Cuadrado, Alto Contraste, Minimalista
+ */
 :root {
+    /* --- 1. IDENTIDAD DE MARCA (Brand) --- */
+    --zcb-brand-orange:       #E8772E; /* Acción Principal */
+    --zcb-brand-orange-dark:  #d1601a; /* Hover */
+    --zcb-brand-orange-light: #fff0e6; /* Fondos sutiles */
+    --zcb-brand-black:        #1f1f21; /* Texto Principal / Headings */
+    --zcb-brand-black-soft:   #333333; /* Texto Párrafos */
 
-  /* =========================================
-     1. PALETA DE COLORES ZOCOBA (BRAND)
-     ========================================= */
-  
-  /* --- Color Principal (Acción / Compra) --- */
-  /* Naranja vibrante para botones y precios */
-  --zcb-brand-orange: #E8772E;       
-  --zcb-brand-orange-hover: #d1601a; /* Tono más oscuro para hover */
-  --zcb-brand-orange-light: #fff0e6; /* Fondo muy suave para destacados */
+    /* --- 2. COLORES FUNCIONALES (UI) --- */
+    --zcb-success:    #00a650; /* Verde ML (Stock, Envío Gratis) */
+    --zcb-success-bg: #e6f7ee;
+    --zcb-info:       #3483fa; /* Azul Enlaces */
+    --zcb-warning:    #ffb600; /* Estrellas / Alertas */
+    --zcb-error:      #ff3b30; /* Agotado / Error */
+    --zcb-error-bg:   #fff4f3;
 
-  /* --- Color Secundario (Identidad / Texto) --- */
-  /* Negro profundo para encabezados y seriedad */
-  --zcb-brand-black: #1f1f21;
-  --zcb-brand-black-light: #333333; /* Para textos largos */
+    /* --- 3. INTERFAZ Y FONDOS (Neutrales) --- */
+    --zcb-bg-body:   #f5f5f5; /* Gris Amazon (Fondo Web) */
+    --zcb-bg-white:  #ffffff; /* Fondo Tarjetas */
+    --zcb-bg-light:  #f9f9f9; /* Fondo Inputs/Tablas */
+    --zcb-border:    #e0e0e0; /* Bordes Estructurales */
+    --zcb-border-dk: #cccccc; /* Bordes Inputs (Más visible) */
+    
+    /* --- 4. TIPOGRAFÍA (Fonts) --- */
+    --zcb-font-head: 'Baloo 2', sans-serif;     /* Marca / Títulos */
+    --zcb-font-body: 'Be Vietnam Pro', sans-serif; /* Lectura Técnica */
+    
+    --zcb-fs-xs: 12px; /* Legal / Etiquetas */
+    --zcb-fs-sm: 13px; /* Detalles técnicos */
+    --zcb-fs-md: 14px; /* Cuerpo estándar */
+    --zcb-fs-lg: 16px; /* Subtítulos / Precios lista */
+    --zcb-fs-xl: 20px; /* Títulos sección */
+    --zcb-fs-2x: 24px; /* Títulos producto */
+    --zcb-fs-3x: 28px; /* Precio final */
 
-  /* --- Colores Funcionales (Estilo MercadoLibre/Amazon) --- */
-  --zcb-success: #00a650;  /* Verde "Llega mañana" / Envío Gratis */
-  --zcb-success-bg: #e6f7ee; /* Fondo verde claro */
-  
-  --zcb-info: #3483fa;     /* Azul para enlaces y confianza */
-  --zcb-info-dark: #2968c8;
-  
-  --zcb-error: #ff3b30;    /* Rojo para ofertas agotadas o errores */
-  --zcb-warning: #fff159;  /* Amarillo para estrellas o alertas */
+    /* --- 5. BORDES Y FORMA (Square) --- */
+    --zcb-radius:     0px; /* ADN Cuadrado */
+    --zcb-radius-sm:  8px;
+    --zcb-radius-md:  16px;
+    --zcb-radius-lg:  32px;
+    --zcb-circle:     50%; /* Solo avatares */
 
-  /* --- Escala de Grises (Interfaz Limpia) --- */
-  --zcb-bg-body: #f5f5f5;  /* Fondo general (Gris muy suave, descansa la vista) */
-  --zcb-bg-white: #ffffff; /* Fondo de tarjetas */
-  --zcb-border: #eeee;   /* Bordes sutiles */
-  --zcb-text-gray: #666666; /* Texto secundario / descripciones */
-  --zcb-text-light: #999999; /* Placeholders */
+    /* --- 6. ESPACIADO (Layout) --- */
+    --zcb-gap-xs:  5px;
+    --zcb-gap-sm: 10px;
+    --zcb-gap-md: 20px;
+    --zcb-gap-lg: 30px;
+    --zcb-container: 1280px; /* Ancho máximo */
 
+    /* --- 7. SOMBRAS (Elevación Técnica) --- */
+    --zcb-shadow-xs: 0 1px 2px rgba(0,0,0,0.05);
+    --zcb-shadow-sm: 0 1px 3px rgba(0,0,0,0.10); /* Cards */
+    --zcb-shadow-md: 0 4px 12px rgba(0,0,0,0.15); /* Dropdowns/Hover */
+    --zcb-shadow-lg: 0 10px 25px rgba(0,0,0,0.15); /* Modales */
 
-  /* =========================================
-     2. SISTEMA DE BORDES (SQUARE DESIGN)
-     ========================================= */
-  /* La clave de tu diseño moderno: 0px en todo */
-  --zcb-radius: 0px;
-  
-  /* Solo usamos redondo para avatares de usuario */
-  --zcb-radius-circle: 50%;
+    /* --- 8. MAPEO WOLMART (Override Automático) --- */
+    /* Redefinimos las variables del padre para que usen las nuestras */
+    --wolmart-primary-color:          var(--zcb-brand-black);
+    --wolmart-secondary-color:        var(--zcb-brand-orange);
+    --wolmart-secondary-color-hover:  var(--zcb-brand-orange-dark);
+    --wolmart-success-color:          var(--zcb-success);
+    --wolmart-alert-color:            var(--zcb-error);
+    --wolmart-body-color:             var(--zcb-brand-black-soft);
+    --wolmart-heading-color:          var(--zcb-brand-black);
+    --wolmart-light-color:            var(--zcb-bg-light);
+    --wolmart-border-color:           var(--zcb-border);
+    --wolmart-white-color:            var(--zcb-bg-white);
 
-
-  /* =========================================
-     3. TIPOGRAFÍA
-     ========================================= */
-  --zcb-font-heading: 'Baloo 2', sans-serif;       /* Tu marca */
-  --zcb-font-body: 'Be Vietnam Pro', sans-serif;   /* Lectura técnica */
-  
-  --zcb-font-size-xs: 12px;
-  --zcb-font-size-sm: 13px; /* Estándar de MercadoLibre para detalles */
-  --zcb-font-size-md: 15px; /* Estándar para texto general */
-  --zcb-font-size-lg: 18px; /* Precios y subtítulos */
-  --zcb-font-size-xl: 24px; /* Títulos de producto */
-
-
-  /* =========================================
-     4. SOMBRAS Y ELEVACIÓN
-     ========================================= */
-  /* Sombras técnicas y nítidas, no difusas */
-  --zcb-shadow-card: 0 1px 2px 0 rgba(0,0,0,0.1);
-  --zcb-shadow-hover: 0 8px 16px 0 rgba(0,0,0,0.1);
-  --zcb-shadow-floating: 0 4px 12px rgba(0,0,0,0.15);
-
-
-  /* =========================================
-     5. MAPEO AL TEMA PADRE (WOLMART OVERRIDE)
-     ========================================= */
-  /* Aquí "inyectamos" tus variables en el sistema de Wolmart 
-     para que el tema obedezca tus reglas automáticamente. */
-
-  /* Colores */
-  --wolmart-primary-color: var(--zcb-brand-black);         /* Wolmart usa primario para textos */
-  --wolmart-secondary-color: var(--zcb-brand-orange);      /* Wolmart usa secundario para acción */
-  --wolmart-secondary-color-hover: var(--zcb-brand-orange-hover);
-  --wolmart-success-color: var(--zcb-success);
-  --wolmart-alert-color: var(--zcb-error);
-  --wolmart-body-color: var(--zcb-brand-black-light);
-  --wolmart-heading-color: var(--zcb-brand-black);
-  --wolmart-light-color: var(--zcb-bg-body);
-  --wolmart-border-color: var(--zcb-border);
-
-  /* Fondos */
-  --wolmart-site-bg-color: var(--zcb-bg-body);
-  --wolmart-page-wrapper-bg-color: var(--zcb-bg-body);
-
-  /* Tipografía */
-  --wolmart-font-family: var(--zcb-font-body);
-  --wolmart-heading-font-family: var(--zcb-font-heading);
-  
-  /* Bordes (Forzamos cuadrado) */
-  --wolmart-border-radius: var(--zcb-radius);
-  --wolmart-border-radius-sm: var(--zcb-radius);
-  --wolmart-border-radius-lg: var(--zcb-radius);
-  
-  /* Layout */
-  --wolmart-container-width: 1280px; /* Ancho amplio tipo Amazon */
-  --wolmart-container-gap: 20px;
+    /* Layout Mapeado */
+    --wolmart-container-width:        var(--zcb-container);
+    --wolmart-font-family:            var(--zcb-font-body);
+    --wolmart-heading-font-family:    var(--zcb-font-head);
+    --wolmart-border-radius:          var(--zcb-radius);
+    --wolmart-border-radius-sm:       var(--zcb-radius);
 }
