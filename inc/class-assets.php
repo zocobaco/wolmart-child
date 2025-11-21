@@ -14,15 +14,18 @@ class Assets {
         wp_enqueue_style( 'wolmart-theme' );
 
         // 2. Iconos Profesionales (FontAwesome 6)
-        wp_enqueue_style( 
-            'zcb-icons', 
-            ZCB_URI . '/assets/fontawesone/css/all.min.css', 
+        // Eliminamos el FontAwesome 5 viejo del tema padre para evitar conflictos con el 7
+        wp_dequeue_style('fontawesome-free'); 
+        wp_deregister_style('fontawesome-free');
+        // Cargar TU FontAwesome 7 Pro (Más nuevo y ligero si usas .woff2)
+        wp_enqueue_style(
+            'zcb-fontawesome', 
+            ZCB_ASSETS_URI . '/fontawesone/css/all.min.css', 
             [], 
-            '6.4.0' 
+            '7.0.0'
         );
 
-        // 3. Estilos Compilados (Unificados)
-        // Cargamos el archivo generado por SCSS
+        // 3. Estilos Compilados Principales
         $main_css_path = '/assets/css/style.css';
         
         if ( file_exists( ZCB_PATH . $main_css_path ) ) {
